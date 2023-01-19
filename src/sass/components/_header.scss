@@ -1,0 +1,9 @@
+.header {
+  @extend %list-style;
+  width: 100%;
+  height: 100px;
+  background-color: $iris;
+  text-align: center;
+  color: black;
+  font-size: 50px;
+}
