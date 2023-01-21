@@ -29,6 +29,7 @@
     }
   
     .review-text {
+		display: block;
       /* paragraph styles */
       font-family: 'Montserrat';
       font-style: normal;
@@ -39,10 +40,8 @@
   
       color: #FCFCFC;
       /* main styles */
-  
+		max-height: 256px;
       padding: 35px 39px;
-	
-  
       display: block;
       text-align: center;
       background-color: #84A178;
@@ -125,12 +124,14 @@
       }
   
       .review-text {
+		overflow: hidden;
         padding-left: 80px;
         padding-right: 80px;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.86;
         letter-spacing: 0.04em;
+		border-radius: 24px;
       }
   
       .review-geo {
