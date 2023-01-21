@@ -1,0 +1,42 @@
+@media screen and (min-width: 320px) {
+    .yt-video{
+        width: 224px;
+        height: 199px;
+        border-radius: 10px;
+    }
+    .title-modal-more{
+        margin-bottom: 20px;
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .modal{
+        max-width: min-content;
+        height: auto;
+        background: #fcfcfc;
+        border: 2px solid #f8d24e;
+        border-radius: 10px;
+        padding: 28px;
+        position: relative;
+    }
+    .more{
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: #131313;
+    }
+    .close-button{
+        width: 13.33px;
+        height: 13.33px;
+        position: absolute;
+        top: 16.44px;
+        right: 16.48px;
+        background-color: #fcfcfc;
+        border: 0;
+        cursor: pointer;
+    }
+}
