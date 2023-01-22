@@ -1,193 +1,190 @@
 .customer-reviews {
+  .reviews-container {
+    margin: 0 auto;
+    min-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .reviews-wrapper {
+    padding-top: 174px;
+    padding-bottom: 413px;
+  }
+
+  .review {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-width: 0;
+    max-width: 968px;
+    min-height: 466px;
+    padding-bottom: 24px;
+  }
+
+  .customer-picture {
+    width: 85px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    border-radius: 50%;
+  }
+
+  .review-text {
+    display: block;
+    /* paragraph styles */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.55;
+    /* or 31px */
+
+    color: #fcfcfc;
+    /* main styles */
+    max-height: 256px;
+    padding: 35px 39px;
+    display: block;
+    text-align: center;
+    background-color: #84a178;
+
+    border-radius: 10px;
+  }
+
+  .review-geo {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+    /* main */
+
+    margin-top: auto;
+    text-align: center;
+    color: #131313;
+  }
+
+  .bottom {
+    bottom: 0 !important;
+  }
+
+  .swiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #84a178;
+  }
+
+  @media screen and (min-width: 320px) {
     .reviews-container {
-      margin: 0 auto;
-      min-width: 320px;
-      padding-left: 20px;
-      padding-right: 20px;
+      max-width: 320px;
     }
-  
+
     .reviews-wrapper {
-      padding-top: 174px;
-      padding-bottom: 413px;
+      width: 100%;
+      background-image: url('../images/customer-reviews/background/mobile/background.jpg');
+      background-size: contain;
     }
-  
-    .review {
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-      min-width: 0;
-      max-width: 968px;
-      min-height: 466px;
-      padding-bottom: 24px;
-    }
-  
-    .customer-picture {
-		width: 85px;
-      margin: 0 auto;
-      margin-bottom: 32px;
-	  border-radius: 50%;
-    }
-  
-    .review-text {
-		display: block;
-      /* paragraph styles */
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 2.55;
-      /* or 31px */
-  
-      color: #FCFCFC;
-      /* main styles */
-		max-height: 256px;
-      padding: 35px 39px;
-      display: block;
-      text-align: center;
-      background-color: #84A178;
-  
-      border-radius: 10px;
-    }
-  
-    .review-geo {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1.86;
-      /* main */
-  
-      margin-top: auto;
-      text-align: center;
-      color: #131313;
-    }
-  
-  
-    .bottom {
-      bottom: 0 !important;
-    }
-  
-    .swiper .swiper-pagination-bullet {
-      width: 12px;
-      height: 12px;
-      background-color: #84A178;
-    }
-  
-  
-    @media screen and (min-width: 320px) {
-      .reviews-container {
-        max-width: 320px;
-      }
-  
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 2dppx) {
       .reviews-wrapper {
-        width: 100%;
-        background-image: url(../images/customer-reviews/background/mobile/background.jpg);
+        background-image: url('../images/customer-reviews/background/mobile/background@2x.jpg');
+      }
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 3dppx) {
+      .reviews-wrapper {
+        background-image: url('../images/customer-reviews/background/mobile/background@3x.jpg');
+      }
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    .reviews-wrapper {
+      padding-top: 235px;
+      padding-bottom: 409px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .reviews-container {
+      max-width: 704px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    .review {
+      min-height: 0;
+      height: 355px;
+    }
+
+    .reviews-wrapper {
+      background: url('../images/customer-reviews/background/tablet/background.jpg');
+      padding-top: 283px;
+      padding-bottom: 379px;
+    }
+
+    .review-text {
+      overflow: hidden;
+      padding-left: 80px;
+      padding-right: 80px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.86;
+      letter-spacing: 0.04em;
+      border-radius: 24px;
+    }
+
+    .review-geo {
+      font-size: 16px;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 2dppx) {
+      .reviews-wrapper {
+        background-image: url('../images/customer-reviews/background/tablet/background@2x.jpg');
         background-size: contain;
       }
-		  @media screen and (min-device-pixel-ratio: 2),
-		  screen and (min-resolution: 2dppx) {
-			.reviews-wrapper {
-					background-image: url(../images/customer-reviews/background/mobile/background@2x.jpg);
-				}
-		  }
-		  @media screen and (min-device-pixel-ratio: 3),
-		  screen and (min-resolution: 3dppx) {
-			.reviews-wrapper {
-					background-image: url(../images/customer-reviews/background/mobile/background@3x.jpg);
-				}
-		  }
-    }
-  
-    @media screen and (min-width: 480px) {
-      .reviews-wrapper {
-        padding-top: 235px;
-        padding-bottom: 409px;
-      }
-    }
-  
-    @media screen and (min-width: 768px) {
-      .reviews-container {
-        max-width: 704px;
-        padding-left: 32px;
-        padding-right: 32px;
-      }
-  
-      .review {
-        min-height: 0;
-        height: 355px;
-      }
-  
-      .reviews-wrapper {
-		background: url(../images/customer-reviews/background/tablet/background.jpg) ;
-        padding-top: 283px;
-        padding-bottom: 379px;
-      }
-  
-      .review-text {
-		overflow: hidden;
-        padding-left: 80px;
-        padding-right: 80px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.86;
-        letter-spacing: 0.04em;
-		border-radius: 24px;
-      }
-  
-      .review-geo {
-        font-size: 16px;
-      }
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 2dppx) {
-  	.reviews-wrapper {
-  		background-image: url(../images/customer-reviews/background/tablet/background@2x.jpg);
-		background-size: contain;
-  	}
-  }
-
-  @media screen and (min-device-pixel-ratio: 3),
-  screen and (min-resolution: 3dppx) {
-  	.reviews-wrapper {
-  		background-image: url(../images/customer-reviews/background/tablet/background@3x.jpg);
-		background-size: contain;
-  	}
-  }
-    }
-  
-    @media screen and (min-width: 1200px) {
-      .reviews-container {
-        max-width: 1032px;
-      }
-  
-      .reviews-wrapper {
-        background-image: url(../images/customer-reviews/background/desktop/background.jpg);
-        padding-top: 464px;
-        padding-bottom: 228px;
-      }
-  
-      .review {
-        height: 361px;
-      }
-  
-      .review-text {
-        padding: 43px 109px;
-        font-size: 16px;
-      }
-	  @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 2dppx) {
-  	.reviews-wrapper {
-  		background-image: url(../images/customer-reviews/background/desktop/background@2x.jpg);
-		background-size: contain;
-  	}
-  }
-
-  @media screen and (min-device-pixel-ratio: 3),
-  screen and (min-resolution: 3dppx) {
-  	.reviews-wrapper {
-  		background-image: url(../images/customer-reviews/background/desktop/background@3x.jpg);
-		background-size: contain;
-  	}
-  }
     }
 
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 3dppx) {
+      .reviews-wrapper {
+        background-image: url('../images/customer-reviews/background/tablet/background@3x.jpg');
+        background-size: contain;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .reviews-container {
+      max-width: 1032px;
+    }
+
+    .reviews-wrapper {
+      background-image: url('../images/customer-reviews/background/desktop/background.jpg');
+      padding-top: 464px;
+      padding-bottom: 228px;
+    }
+
+    .review {
+      height: 361px;
+    }
+
+    .review-text {
+      padding: 43px 109px;
+      font-size: 16px;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 2dppx) {
+      .reviews-wrapper {
+        background-image: url('../images/customer-reviews/background/desktop/background@2x.jpg');
+        background-size: contain;
+      }
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 3dppx) {
+      .reviews-wrapper {
+        background-image: url('../images/customer-reviews/background/desktop/background@3x.jpg');
+        background-size: contain;
+      }
+    }
+  }
 }
