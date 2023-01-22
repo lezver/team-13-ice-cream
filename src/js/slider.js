@@ -37,14 +37,14 @@ const swiper = new Swiper('.swiper-reviews', {
   },
 
   autoplay: {
-    delay: 5000,
+    delay: 4000,
     stopOnLastSlide: false,
     disableOnInteraction: true,
   },
 });
 
 const swiperGallery = new Swiper('.swiper-gallery', {
-  speed: 1000,
+  speed: 750,
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
@@ -59,7 +59,7 @@ const swiperGallery = new Swiper('.swiper-gallery', {
   },
 
   autoplay: {
-    delay: 2000,
+    delay: 4000,
     stopOnLastSlide: false,
     disableOnInteraction: false,
   },
