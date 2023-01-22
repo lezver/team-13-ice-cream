@@ -44,6 +44,12 @@ a {
 }
 .hamb {
   display: none;
+  @media (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+  }
 }
 .icon-open-burger {
   width: 32px;
@@ -117,8 +123,20 @@ a {
   @include breakpoint(des) {
     font-size: 16px;
     line-height: 1.2;
-    &:focus, &:hover{
-    color: $almost-yellow;
+    &:focus,
+    &:hover {
+      color: $almost-yellow;
+    }
+  }
+  @media (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    &:last-child{
+    margin-bottom: 114px;
+    }
+    &:hover, &:focus{
+    color: $almost-black;
     }
   }
 }
@@ -139,6 +157,31 @@ a {
   @include breakpoint(des) {
     display: none;
   }
+  @media (max-width: 1199px) {
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: $background-green;
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+  }
+  .menu {
+    @media (max-width: 1199px) {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      overflow: scroll;
+      li {
+        width: 100%;
+      }
+    }
+  }
 }
 .navigation-list {
   @include breakpoint(des) {
@@ -147,12 +190,18 @@ a {
     width: 444px;
     justify-content: space-between;
   }
+  @media (max-width: 1199px) {
+    margin-top: 140px;
+  }
 }
 .logo-icon-desctop {
   @include breakpoint(des) {
     width: 60px;
     height: 65px;
     fill: $almost-yellow;
+  }
+  @media (max-width: 1199px) {
+    display: none;
   }
 }
 .logo {
@@ -164,69 +213,26 @@ a {
     top: 0;
   }
 }
-
-/* _______________________________________________________________MEDIA____________________MEDIA________________MEDIA__________________________MEDIA__________ */
-@media (max-width: 767px) {
-  .decoration-buy-now-tablet {
+.decoration-buy-now-tablet {
+  @media (max-width: 767px) {
     display: none;
   }
 }
-@media (max-width: 1199px) {
-  .logo-icon-desctop {
+.menu{
+  @media (max-width: 1199px) {
     display: none;
   }
-  .menu {
-    display: none;
-  }
-  .hamb {
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    border: none;
-  }
-  .popup {
-    position: fixed;
-    top: 0px;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: $background-green;
-    z-index: 100;
-    display: flex;
-    transition: 0.3s;
-  }
+}
   .popup.open {
+@media (max-width: 1199px) {
+
     right: 0;
   }
-  .popup .menu {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    overflow: scroll;
   }
-  .popup .menu > li {
-    width: 100%;
-  }
-  .navigation-list {
-    margin-top: 140px;
-  }
+body.noscroll {
+  @media (max-width: 1199px) {
 
-  .navigation-item:not(:last-child) {
-    margin-bottom: 40px;
-  }
-  .navigation-item:last-child {
-    margin-bottom: 114px;
-  }
-  .navigation-item:hover,
-  .navigation-item:focus {
-    color: $almost-black;
-  }
-  body.noscroll {
+  
     overflow: hidden;
   }
 }
-
-
