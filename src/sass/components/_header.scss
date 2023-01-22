@@ -1,12 +1,12 @@
-header{
- background-color:$background-green;
+header {
+  background-color: $background-green;
 }
-a:visited{
-  color: currentColor;
-}
-a{
+a {
   color: currentColor;
   text-decoration: none;
+  &:visited {
+    color: currentColor;
+  }
 }
 .page-header .navbar {
   min-height: 37px;
@@ -16,13 +16,31 @@ a{
 }
 .navbar {
   padding-top: 12px;
+  @include breakpoint(tab) {
+    padding-top: 20px;
+  }
+  @include breakpoint(des) {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 0;
+    padding-left: 308px;
+    height: 73px;
+  }
 }
 .logo-icon-mobile {
   display: block;
   width: 40px;
   height: 37px;
   fill: $almost-yellow;
-
+  @include breakpoint(mob) {
+    width: 48px;
+    height: 44px;
+    fill: $almost-yellow;
+  }
+  @include breakpoint(des) {
+    display: none;
+  }
 }
 .hamb {
   display: none;
@@ -31,17 +49,20 @@ a{
   width: 32px;
   height: 32px;
   fill: $almost-white;
-  &:hover{fill: $almost-yellow;}  
-
+  &:hover {
+    fill: $almost-yellow;
+  }
 }
 .icon-close-burger {
-    width: 19px;
+  width: 19px;
   height: 19px;
   position: absolute;
   right: 32px;
   top: 26px;
-    fill: $almost-white;
-  &:hover{fill: $almost-yellow;}
+  fill: $almost-white;
+  &:hover {
+    fill: $almost-yellow;
+  }
 }
 .button-buy-now {
   font-weight: 600;
@@ -57,13 +78,17 @@ a{
   background: #f8d24e;
   border-radius: 10px;
   text-decoration: none;
-  border:none;
-  &:hover{background-color: #0A8817;}  
-  &:focus{ background-color: #0A8817;
-  color: $almost-white;}
-  &:disabled{
-    background-color: #ABABAB;
-  }  
+  border: none;
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    background-color: #0a8817;
+    color: $almost-white;
+  }
+  &:disabled {
+    background-color: #ababab;
+  }
 }
 .buy-now {
   margin-left: 4px;
@@ -71,7 +96,6 @@ a{
   height: 12px;
   fill: currentColor;
   border: none;
-
 }
 .logo-mobile {
   position: absolute;
@@ -86,48 +110,68 @@ a{
   display: flex;
   align-items: center;
   text-align: center;
-
-}
-
-/* _______________________________________________________________MEDIA____________________MEDIA________________MEDIA__________________________MEDIA__________ */
-@media screen and (min-width: 480px) {
-
-  .logo-icon-mobile {
-    width: 48px;
-    height: 44px;
-    fill: $almost-yellow;
+  @include breakpoint(tab) {
+    font-size: 48px;
+    line-height: 1.22;
+  }
+  @include breakpoint(des) {
+    font-size: 16px;
+    line-height: 1.2;
+    &:focus, &:hover{
+    color: $almost-yellow;
+    }
   }
 }
-
-@media (max-width: 767px) {
-  .decoration-buy-now-tablet {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-
-  .navbar {
-    padding-top: 20px;
-  }
-  .tablet-absolute {
+.tablet-absolute {
+  @include breakpoint(tab) {
     position: absolute;
     top: 45px;
     right: 216px;
     transform: translateY(-50%);
   }
-
-  .decoration-buy-now {
+}
+.decoration-buy-now {
+  @include breakpoint(tab) {
     display: none;
   }
-  .navigation-item {
-    font-size: 48px;
-    line-height: 1.22;
+}
+.popup {
+  @include breakpoint(des) {
+    display: none;
+  }
+}
+.navigation-list {
+  @include breakpoint(des) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 444px;
+    justify-content: space-between;
+  }
+}
+.logo-icon-desctop {
+  @include breakpoint(des) {
+    width: 60px;
+    height: 65px;
+    fill: $almost-yellow;
+  }
+}
+.logo {
+  @include breakpoint(des) {
+    width: 60px;
+    height: 65px;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 }
 
+/* _______________________________________________________________MEDIA____________________MEDIA________________MEDIA__________________________MEDIA__________ */
+@media (max-width: 767px) {
+  .decoration-buy-now-tablet {
+    display: none;
+  }
+}
 @media (max-width: 1199px) {
-
   .logo-icon-desctop {
     display: none;
   }
@@ -184,48 +228,5 @@ a{
     overflow: hidden;
   }
 }
-@media (min-width: 1200px) {
-  .popup{
-    display: none;
-  }
-  .logo-icon-mobile {
-    display: none;
-  }
-  .navbar {
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse;
-    padding-top: 0;
-    padding-left: 308px;
-    height: 73px;
-  }
-  .navigation-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 444px;
-    justify-content: space-between;
-  }
-  .logo-icon-desctop {
-    width: 60px;
-    height: 65px;
-  fill: $almost-yellow;
 
-  }
-  .navigation-item {
-    font-size: 16px;
-    line-height: 1.2;
-  }
 
-  .logo {
-    width: 60px;
-    height: 65px;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
-  .navigation-item:hover,
-  .navigation-item:focus {
-    color: $almost-yellow;
-  }
-}
