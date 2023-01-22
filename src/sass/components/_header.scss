@@ -1,9 +1,10 @@
-header {
+.header {
   background-color: $background-green;
 }
 a {
   color: currentColor;
   text-decoration: none;
+    transition: color $time $time-distribution;
   &:visited {
     color: currentColor;
   }
@@ -37,6 +38,7 @@ ul{
   width: 40px;
   height: 37px;
   fill: $almost-yellow;
+
   @include breakpoint(mob) {
     width: 48px;
     height: 44px;
@@ -59,7 +61,8 @@ ul{
   width: 32px;
   height: 32px;
   fill: $almost-white;
-  &:hover {
+    transition: fill $time $time-distribution;
+  &:hover, &:focus {
     fill: $almost-yellow;
   }
 }
@@ -70,14 +73,15 @@ ul{
   right: 32px;
   top: 26px;
   fill: $almost-white;
-  &:hover {
+    transition: fill $time $time-distribution;
+  &:hover, &:focus {
     fill: $almost-yellow;
   }
 }
 .button-buy-now {
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.22;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,6 +93,10 @@ ul{
   border-radius: 10px;
   text-decoration: none;
   border: none;
+    transition: color $time $time-distribution;
+    transition: background-color $time $time-distribution;
+
+
   &:hover {
     background-color: #0a8817;
   }
@@ -111,6 +119,7 @@ ul{
   position: absolute;
   top: 12px;
   left: 20px;
+
 }
 .navigation-item {
   justify-content: center;
@@ -120,6 +129,8 @@ ul{
   display: flex;
   align-items: center;
   text-align: center;
+ color: $almost-white;
+  
   @include breakpoint(tab) {
     font-size: 48px;
     line-height: 1.22;
@@ -203,6 +214,7 @@ ul{
     width: 60px;
     height: 65px;
     fill: $almost-yellow;
+
   }
   @media (max-width: 1199px) {
     display: none;
