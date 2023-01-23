@@ -6,6 +6,7 @@ body {
   letter-spacing: 0.04rem;
   color: $almost-white;
 }
+
 // Номер телефона у футері
 // font-family: 'DM Sans', sans-serif;
 // Заголовки
@@ -74,7 +75,7 @@ svg {
   max-width: 500px;
 
   /*  Центрируем и задаем z-index */
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
