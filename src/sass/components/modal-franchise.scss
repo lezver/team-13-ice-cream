@@ -1,10 +1,4 @@
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    color: #131313;
-}
 .modal-franchise{
     padding: 28px;
     width: 280px;
@@ -15,10 +9,12 @@ body{
     background-color: #fff;
 }
 
-.text-modal-franchise   {    
+.text-modal-franchise{    
     font-size: 14px;
     line-height: 1.4;
     margin-bottom: 24px;
+    color: #131313;
+    text-align: start;
 }
 .title-modal-franchise{
 font-family: 'Seymour One';
@@ -26,6 +22,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 margin-bottom: 20px;
+color: #131313;
 }
 .form-modal-franchise{
     display: flex;
