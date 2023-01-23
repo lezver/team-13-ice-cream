@@ -217,7 +217,13 @@ img {
       height: 0px;
       border: 1px solid #E1E1E1;
   }
-  
+  .footer-text {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -258,9 +264,6 @@ img {
   .telefon {
       font-size: 14px;
   }
-  .protection-of-rights {
-      padding-top: 12px;
-  }
 }
 @media screen and (max-width: 1159px) {
   
@@ -275,6 +278,10 @@ img {
   .franchise:active {
       border: 2px solid #0A8817;
       border-radius: 10px;
+  }
+  
+  .protection-of-rights {
+      width: 146px;
   }
 }
 @media screen and (min-width: 1200px) {
