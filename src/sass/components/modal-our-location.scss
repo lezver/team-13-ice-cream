@@ -1,1 +1,136 @@
-
+@media screen and (min-width: 768px) {
+    .modal__cross{
+      width: 13.33px;
+      height: 13.33px;
+      position: absolute;
+      top: 17.33px;
+      right: 17.34px;
+      background-color: #fcfcfc;
+      border: 0;
+      cursor: pointer;
+    }
+    .modal {
+      width: min-content;
+      height: auto;
+      background: #fcfcfc;
+      border: 2px solid #f8d24e;
+      border-radius: 10px;
+      padding: 32px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .map {
+      width: 448px;
+      height: 260px;
+      border-radius: 10px;
+      margin: 0 auto;
+      border: 0px;
+      margin-top: 20px;
+      margin-bottom: 36px;
+    }
+    .open-map {
+      background-color: #f8d24e;
+      padding: 12px 34px;
+      border-radius: 10px;
+      color: #131313;
+      text-decoration: none;
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.21;
+      transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      outline: 0;
+    }
+    .open-map:hover {
+      background-color: #0a8817;
+      color: #000;
+    }
+    .open-map:focus {
+      background-color: #0a8817;
+      color: #fff;
+    }
+    .open-map:disabled {
+      background-color: #ababab;
+      color: #000;
+    }
+    .title-modal-location {
+      font-family: "Seymour One";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.4;
+      text-align: center;
+      color: #131313;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .close-button {
+      width: 13.33px;
+      height: 13.33px;
+      position: absolute;
+      top: 16.44px;
+      right: 16.48px;
+      background-color: #fcfcfc;
+      border: 0;
+      cursor: pointer;
+    }
+    .modal {
+      width: min-content;
+      height: auto;
+      background: #fcfcfc;
+      border: 2px solid #f8d24e;
+      border-radius: 10px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .map {
+      width: 224px;
+      height: 199px;
+      border-radius: 10px;
+      margin: 0 auto;
+      border: 0px;
+      margin-top: 20px;
+      margin-bottom: 36px;
+    }
+    .open-map {
+      background-color: #f8d24e;
+      display: block;
+      padding: 12px 34px;
+      border-radius: 10px;
+      color: #131313;
+      text-decoration: none;
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.21;
+      outline: 0;
+      transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .open-map:hover {
+      background-color: #0a8817;
+      color: #000;
+    }
+    .open-map:focus {
+      background-color: #0a8817;
+      color: #fff;
+    }
+    .open-map:disabled {
+      background-color: #ababab;
+      color: #000;
+    }
+    .title-modal-location {
+      font-family: "Seymour One";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: center;
+      color: #131313;
+    }
+  }
+  

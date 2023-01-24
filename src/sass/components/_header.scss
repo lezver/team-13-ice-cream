@@ -1,0 +1,248 @@
+.header {
+  background-color: $background-green;
+}
+.page-header .navbar {
+  min-height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+  padding-top: 12px;
+  @include breakpoint(tab) {
+    padding-top: 20px;
+  }
+  @include breakpoint(des) {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 8px;
+    padding-left: 308px;
+    height: 73px;
+  }
+}
+.logo-icon-mobile {
+  display: block;
+  width: 40px;
+  height: 37px;
+  fill: $almost-yellow;
+
+  @include breakpoint(mob) {
+    width: 48px;
+    height: 44px;
+    fill: $almost-yellow;
+  }
+  @include breakpoint(des) {
+    display: none;
+  }
+}
+.hamb {
+  display: none;
+  @media (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+  }
+}
+.icon-open-burger {
+  width: 32px;
+  height: 32px;
+  fill: $almost-white;
+  transition: fill $time $time-distribution;
+  &:hover,
+  &:focus {
+    fill: $almost-yellow;
+  }
+}
+.icon-close-burger {
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  right: 32px;
+  top: 26px;
+  fill: $almost-white;
+  transition: fill $time $time-distribution;
+  &:hover,
+  &:focus {
+    fill: $almost-yellow;
+  }
+}
+.button-buy-now {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #000000;
+  width: 152px;
+  height: 42px;
+  background: #f8d24e;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  transition: color $time $time-distribution;
+  transition: background-color $time $time-distribution;
+
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    background-color: #0a8817;
+    color: $almost-white;
+  }
+  &:disabled {
+    background-color: #ababab;
+  }
+}
+.buy-now {
+  margin-left: 4px;
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+  border: none;
+}
+.logo-mobile {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+.navigation-item {
+  justify-content: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $almost-white;
+  a {
+    color: currentColor;
+    text-decoration: none;
+    transition: color $time $time-distribution;
+    &:visited {
+      color: currentColor;
+    }
+  }
+  @include breakpoint(tab) {
+    font-size: 48px;
+    line-height: 1.22;
+  }
+  @include breakpoint(des) {
+    font-size: 16px;
+    line-height: 1.2;
+    &:focus,
+    &:hover {
+      color: $almost-yellow;
+    }
+  }
+  @media (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    &:last-child {
+      margin-bottom: 114px;
+    }
+    &:hover,
+    &:focus {
+      color: $almost-black;
+    }
+  }
+}
+.tablet-absolute {
+  @include breakpoint(tab) {
+    position: absolute;
+    top: 45px;
+    right: 216px;
+    transform: translateY(-50%);
+  }
+}
+.decoration-buy-now {
+  @include breakpoint(tab) {
+    display: none;
+  }
+}
+.popup {
+  @include breakpoint(des) {
+    display: none;
+  }
+  @media (max-width: 1199px) {
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: $background-green;
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+  }
+  .menu {
+    @media (max-width: 1199px) {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      overflow: scroll;
+      li {
+        width: 100%;
+      }
+    }
+  }
+}
+.navigation-list {
+  @extend %list-style;
+  @include breakpoint(des) {
+    margin-left: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 444px;
+    justify-content: space-between;
+  }
+  @media (max-width: 1199px) {
+    margin-top: 140px;
+  }
+}
+.logo-icon-desctop {
+  @include breakpoint(des) {
+    width: 60px;
+    height: 65px;
+    fill: $almost-yellow;
+  }
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+.logo {
+  @include breakpoint(des) {
+    width: 60px;
+    height: 65px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+}
+.decoration-buy-now-tablet {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.menu {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+.popup.open {
+  @media (max-width: 1199px) {
+    right: 0;
+  }
+}
+body.noscroll {
+  @media (max-width: 1199px) {
+    overflow: hidden;
+  }
+}

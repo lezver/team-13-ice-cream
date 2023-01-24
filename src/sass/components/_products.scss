@@ -1,0 +1,282 @@
+.products {
+  width: 100%;
+  text-align: center;
+  color: $almost-black;
+  font-size: 50px;
+  padding: 60px 0;
+  background-position: center;
+  background: url('../images/products/background/mobile/background.jpg')
+    no-repeat center/cover;
+  @include min-device-pixel(2, 192dpi, 2dppx) {
+    & {
+      background: url('../images/products/background/mobile/background@2x.jpg')
+        no-repeat center/cover;
+    }
+  }
+  @include min-device-pixel(3, 288dpi, 3dppx) {
+    & {
+      background: url('../images/products/background/mobile/background@3x.jpg')
+        no-repeat center/cover;
+    }
+  }
+  @include breakpoint(tab) {
+    background: url('../images/products/background/tablet/background.jpg')
+      no-repeat center/cover;
+    @include min-device-pixel(2, 192dpi, 2dppx) {
+      & {
+        background: url('../images/products/background/tablet/background@2x.jpg')
+          no-repeat center/cover;
+      }
+    }
+    @include min-device-pixel(3, 288dpi, 3dppx) {
+      & {
+        background: url('../images/products/background/desktop/background@3x.jpg')
+          no-repeat center/cover;
+      }
+    }
+  }
+  @include breakpoint(des) {
+    background: url('../images/products/background/desktop/background.jpg')
+      no-repeat center/cover;
+    @include min-device-pixel(2, 192dpi, 2dppx) {
+      & {
+        background: url('../images/products/background/desktop/background@2x.jpg')
+          no-repeat center/cover;
+      }
+    }
+    @include min-device-pixel(3, 288dpi, 3dppx) {
+      & {
+        background: url('../images/products/background/desktop/background@3x.jpg')
+          no-repeat center/cover;
+      }
+    }
+  }
+  & .products {
+    &-label {
+      text-align: center;
+      color: $almost-black;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 1, 22;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      @include breakpoint(tab) {
+        font-size: 22px;
+      }
+      @include breakpoint(des) {
+        font-size: 30px;
+        line-height: 1.23;
+        letter-spacing: 0.04em;
+      }
+    }
+    &-subtitle {
+      font-family: 'Seymour One';
+      text-align: center;
+      color: #131313;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 1.26;
+      letter-spacing: 0.04em;
+      margin-bottom: 148px;
+      text-transform: uppercase;
+      @include breakpoint(mob) {
+        margin-bottom: 145px;
+      }
+      @include breakpoint(tab) {
+        font-size: 34px;
+        line-height: 1.26;
+        margin-bottom: 200px;
+      }
+      @include breakpoint(des) {
+        font-size: 36px;
+        line-height: 1.25;
+        letter-spacing: 0.06em;
+        margin-bottom: 303px;
+      }
+    }
+  }
+  & .product {
+    display: flex;
+    flex-direction: column;
+    gap: 168px;
+    align-items: center;
+    justify-content: center;
+    @extend %list-style;
+    @include breakpoint(tab) {
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 16px;
+    }
+    @include breakpoint(des) {
+      gap: 29px;
+    }
+    & .product-card {
+      max-width: 320px;
+      width: 100%;
+      border-radius: 24px;
+      padding: 0 40px 16px;
+      @include breakpoint(mob) {
+        padding: 0 60px 16px;
+      }
+      @include breakpoint(tab) {
+        max-width: 224px;
+        padding: 0 12px 12px;
+      }
+      @include breakpoint(des) {
+        max-width: 370px;
+        padding: 0 34px 60px;
+      }
+      &:nth-child(1) {
+        background-color: #aec6a5;
+        & .product-image::before {
+          background: linear-gradient(
+              0deg,
+              rgba(156, 190, 143, 0.7),
+              rgba(156, 190, 143, 0.7)
+            ),
+            #d9d9d9;
+          box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+        }
+      }
+      &:nth-child(2) {
+        background-color: #efd478;
+        & .product-image::before {
+          background: linear-gradient(
+              0deg,
+              rgba(248, 210, 78, 0.7),
+              rgba(248, 210, 78, 0.7)
+            ),
+            #d9d9d9;
+          box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+        }
+      }
+      &:nth-child(3) {
+        background-color: #d6936d;
+        & .product-image::before {
+          background: linear-gradient(
+              0deg,
+              rgba(213, 117, 63, 0.7),
+              rgba(213, 117, 63, 0.7)
+            ),
+            #d9d9d9;
+          box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+        }
+      }
+      .product {
+        &-image {
+          margin: 0 auto;
+          width: 200px;
+          height: 103px;
+          @include breakpoint(mob) {
+            height: 106px;
+          }
+          @include breakpoint(tab) {
+            height: 92px;
+          }
+          @include breakpoint(des) {
+            height: 135px;
+            width: 302px;
+          }
+          &::before {
+            display: block;
+            position: relative;
+            top: -97px;
+            width: 100%;
+            height: 200px;
+            content: '';
+            border-radius: 50%;
+            @include breakpoint(mob) {
+              top: -94px;
+            }
+            @include breakpoint(tab) {
+              top: -108px;
+            }
+            @include breakpoint(des) {
+              top: -167px;
+              height: 302px;
+            }
+          }
+          & img {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            top: -308px;
+            border-radius: 50%;
+            @include breakpoint(mob) {
+              top: -305px;
+            }
+            @include breakpoint(tab) {
+              top: -320px;
+            }
+            @include breakpoint(des) {
+              top: -485px;
+              height: 302px;
+            }
+          }
+        }
+        &-body {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          min-height: 301px;
+          margin-top: 20px;
+          @include breakpoint(mob) {
+            min-height: 306px;
+          }
+          @include breakpoint(tab) {
+            min-height: 324px;
+            margin-top: 16px;
+          }
+          @include breakpoint(des) {
+            min-height: 341px;
+            margin-top: 30px;
+          }
+          .products-subject {
+            font-family: 'Montserrat';
+            text-align: center;
+            color: #131313;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.04em;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            @include breakpoint(tab) {
+              font-size: 22px;
+              line-height: 1.22;
+            }
+            @include breakpoint(des) {
+              font-size: 30px;
+              line-height: 1.23;
+              margin-bottom: 66px;
+            }
+          }
+          .product {
+            &-text {
+              text-align: center;
+              color: #131313;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 1.76;
+              letter-spacing: 0.04em;
+              @include breakpoint(des) {
+                font-size: 16px;
+              }
+            }
+            &-button {
+              background: transparent;
+              border: none;
+              width: 40px;
+              height: 16px;
+              .product-icon {
+                width: 40px;
+                height: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

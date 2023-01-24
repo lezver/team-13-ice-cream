@@ -1,0 +1,111 @@
+.advantages {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat';
+  font-size: 36px;
+  text-align: center;
+  background-color: $background-green;
+  color: $almost-white;
+  padding-bottom: 70px;
+  @include breakpoint(tab) {
+    padding-bottom: 200px;
+  }
+  @include breakpoint(des) {
+    padding-bottom: 178px;
+  }
+}
+
+.visually-hidden {
+  @extend %visually-hidden;
+}
+
+.advantages-list {
+  @extend %list-style;
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(tab) {
+    flex-direction: row;
+    justify-content: center;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.li-margin {
+  margin-bottom: 28px;
+  @include breakpoint(tab) {
+    margin-right: 80px;
+    margin-bottom: 0px;
+  }
+  @include breakpoint(des) {
+    margin-right: 32px;
+  }
+}
+
+.icon-align {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: $almost-yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  @include breakpoint(tab) {
+    margin-bottom: 32px;
+  }
+  @include breakpoint(des) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages-icon {
+  width: 36px;
+  height: 36px;
+  fill: $almost-black;
+}
+
+.advantages-text {
+  display: flex;
+  flex-direction: column;
+  h3 {
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.22;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.66;
+    width: 230px;
+  }
+  @include breakpoint(tab) {
+    h3 {
+      text-transform: lowercase;
+      letter-spacing: 0.04em;
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      width: 150px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.71;
+    }
+  }
+  @include breakpoint(des) {
+    h3 {
+      margin-bottom: 12px;
+    }
+    p {
+      width: 340px;
+    }
+  }
+}
