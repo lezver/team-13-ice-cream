@@ -1,0 +1,330 @@
+.modal-product-card{
+    background: #FCFCFC;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+}
+
+@media screen and  (max-width:767px){
+    .modal-product-card{
+        position: absolute;
+        top: 10px;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media screen and  (min-width:768px){
+    .modal-product-card{
+        position: absolute;
+        top: 10px;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+
+.product-card-text{
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #131313;
+    margin-bottom: 83px;
+    @include breakpoint(tab){
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+// costomers checkbox--------------
+
+.checkbox-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 84px;
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+// green------
+.costomers-checkbox-ice-cream{
+    display: block;
+    width: 132px;
+    height: 136px;
+
+    border: 2px solid #96AF8C;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15px;
+}
+
+.checkbox:checked + .costomers-checkbox-ice-cream{
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+}
+
+.costomers-checkbox-ice-cream::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    border-radius: 50%;
+    transform: translateY(-60px);
+}
+
+.costomers-checkbox-ice-cream::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/modal/picture-one/picture.jpg);
+    border-radius: 50%;
+    background-size:cover;
+    transform: translateY(-198px);
+}
+
+@media screen and  (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .costomers-checkbox-ice-cream::after{
+        background-image: url(../images/modal/picture-one/picture@2x.jpg);
+    }
+}
+
+@media screen and  (min-device-pixel-ratio: 2),
+screen and (min-resolution: 288dpi),
+screen and (min-resolution: 3dppx) {
+    .costomers-checkbox-ice-cream::after{
+        background-image: url(../images/modal/picture-one/picture@3x.jpg);
+    }
+}
+
+// yellow----------
+
+.costomers-checkbox-ice-coffee{
+    display: block;
+    width: 132px;
+    height: 136px;
+
+    border: 2px solid #EFD478;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15px;
+}
+
+.checkbox:checked +  .costomers-checkbox-ice-coffee{
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+}
+
+.costomers-checkbox-ice-coffee::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+    border-radius: 50%;
+    transform: translateY(-60px);
+}
+
+.costomers-checkbox-ice-coffee::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/modal/picture-two/picture.jpg);
+    border-radius: 50%;
+    transform: translateY(-198px);
+    background-size:cover;
+}
+
+@media screen and  (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .costomers-checkbox-ice-coffee::after{
+        background-image: url(../images/modal/picture-two/picture@2x.jpg);
+    }
+}
+
+@media screen and  (min-device-pixel-ratio: 2),
+screen and (min-resolution: 288dpi),
+screen and (min-resolution: 3dppx) {
+    .costomers-checkbox-ice-coffee::after{
+        background-image: url(../images/modal/picture-two/picture@3x.jpg);
+    }
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+// brown---------
+
+.costomers-checkbox-milkshake{
+    display: block;
+    width: 132px;
+    height: 136px;
+
+    border: 2px solid #D6936D;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15.7808px;
+}
+
+.checkbox:checked + .costomers-checkbox-milkshake{
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+}
+
+.costomers-checkbox-milkshake::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    transform: translateY(-60px);
+}
+
+.costomers-checkbox-milkshake::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/modal/picture-three/picture.jpg);
+    border-radius: 50%;
+    transform: translateY(-198px);
+    background-size:cover;
+}
+
+@media screen and  (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .costomers-checkbox-milkshake::after{
+        background-image: url(../images/modal/picture-three/picture@2x.jpg);
+    }
+}
+
+@media screen and  (min-device-pixel-ratio: 2),
+screen and (min-resolution: 288dpi),
+screen and (min-resolution: 3dppx) {
+    .costomers-checkbox-milkshake::after{
+        background-image: url(../images/modal/picture-three/picture@3x.jpg);
+    }
+}  
+
+.checkbox-text{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+
+    text-transform: uppercase;
+    text-align: center;
+    color: #131313;
+
+    transform: translateY(-36px);
+}
+
+// -------------------------------------------------
+
+.contact-form{
+    height: 32px;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 12px 16px;
+
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    color: #131313;
+}
+
+.contact-form:hover,
+.contact-form:focus{
+    border-color: #F8D24E;
+    outline: none;
+}
+
+.contact-form-texteria{
+    width: 100%;
+    height: 65px;
+    margin-bottom: 26px;
+    padding: 8px 12px 0 12px;
+    resize: none;
+
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+
+    font-size: 12px;
+    line-height: 140%;
+    color: #131313;
+}
+
+.contact-form-texteria:hover,
+.contact-form-texteria:focus{
+    border-color: #F8D24E;
+    outline: none;
+}
+
+.buy-now-button{
+    padding: 12px 34px;
+    background: #F8D24E;
+    border-radius: 10px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    border: none;
+
+    @include breakpoint(tab){
+        font-size: 14px;
+        line-height: 1.21;
+    }
+}
+
+.buy-now-button:hover{
+    background-color: #0A8817;
+}
+
+.buy-now-button:focus{
+    color: #ffff;
+}
+
+.buy-now-button:disabled{
+    background-color: #ABABAB;
+}
+.checkbox{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+@media screen and (min-width: 768px){
+    .checkbox-list{
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 32px;
+        margin-bottom: 40px;
+    }
+
+    .checkbox-milkshake{
+        margin-bottom: 0;
+    }
+
+    .contact-form{
+        width: 368px;
+        margin-bottom: 16px;
+    }
+
+    .contact-form-texteria{
+        width: 368px;
+    }
+}
