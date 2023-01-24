@@ -95,13 +95,6 @@
     background-image: url(../images/modal/picture-one/picture@2x.jpg);
   }
 }
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 288dpi),
-  screen and (min-resolution: 3dppx) {
-  .costomers-checkbox-ice-cream::after {
-    background-image: url(../images/modal/picture-one/picture@3x.jpg);
-  }
-}
 // yellow----------
 .costomers-checkbox-ice-coffee {
   display: block;
@@ -149,13 +142,6 @@
   screen and (min-resolution: 2dppx) {
   .costomers-checkbox-ice-coffee::after {
     background-image: url(../images/modal/picture-two/picture@2x.jpg);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 288dpi),
-  screen and (min-resolution: 3dppx) {
-  .costomers-checkbox-ice-coffee::after {
-    background-image: url(../images/modal/picture-two/picture@3x.jpg);
   }
 }
 // brown---------
@@ -206,13 +192,6 @@
   screen and (min-resolution: 2dppx) {
   .costomers-checkbox-milkshake::after {
     background-image: url(../images/modal/picture-three/picture@2x.jpg);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 288dpi),
-  screen and (min-resolution: 3dppx) {
-  .costomers-checkbox-milkshake::after {
-    background-image: url(../images/modal/picture-three/picture@3x.jpg);
   }
 }
 .checkbox-text {

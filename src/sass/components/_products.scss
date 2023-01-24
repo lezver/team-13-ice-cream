@@ -13,24 +13,12 @@
         no-repeat center/cover;
     }
   }
-  @include min-device-pixel(3, 288dpi, 3dppx) {
-    & {
-      background: url('../images/products/background/mobile/background@3x.jpg')
-        no-repeat center/cover;
-    }
-  }
   @include breakpoint(tab) {
     background: url('../images/products/background/tablet/background.jpg')
       no-repeat center/cover;
     @include min-device-pixel(2, 192dpi, 2dppx) {
       & {
         background: url('../images/products/background/tablet/background@2x.jpg')
-          no-repeat center/cover;
-      }
-    }
-    @include min-device-pixel(3, 288dpi, 3dppx) {
-      & {
-        background: url('../images/products/background/desktop/background@3x.jpg')
           no-repeat center/cover;
       }
     }
@@ -41,12 +29,6 @@
     @include min-device-pixel(2, 192dpi, 2dppx) {
       & {
         background: url('../images/products/background/desktop/background@2x.jpg')
-          no-repeat center/cover;
-      }
-    }
-    @include min-device-pixel(3, 288dpi, 3dppx) {
-      & {
-        background: url('../images/products/background/desktop/background@3x.jpg')
           no-repeat center/cover;
       }
     }

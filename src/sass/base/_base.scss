@@ -3,11 +3,13 @@ body {
   font-size: 16px;
   color: $almost-black;
 }
-
 // Номер телефона у футері
 // font-family: 'DM Sans', sans-serif;
 // Заголовки
 // font-family: 'Seymour One', sans-serif;
+a {
+  text-decoration: none;
+}
 p,
 h1,
 h2,
