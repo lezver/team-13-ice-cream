@@ -1,52 +1,238 @@
-<!-- Элементы для вызова модальных окон, могут быть любые -->
-
 <a href="#" class="js-open-modal" data-modal="2">Открыть окно 2</a>
 <a href="#" class="js-open-modal" data-modal="3">Открыть окно 3</a>
 <a href="#" class="js-open-modal" data-modal="4">Открыть окно 4</a>
 
-<!-- Несколько модальных окон -->
-
-<div class="modal" data-modal="2">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p>Заголовок окна 2</p>
+<!-- Modal Ingredients "2" -->
+<div class="modal-ingredients modal" data-modal="2">
+  <button type="button" class="button-close">
+    <svg class="icon-close modal__cross js-modal-close" width="11" height="11">
+      <use href="./images/icons.svg#icon-cross"></use>
+    </svg>
+  </button>
+  <p class="modal-icecream-page">Chocolate icecream</p>
+  <div class="modal-icecream-image"></div>
+  <ul class="modal-icecream-list list">
+    <li class="modal-icecream-item">
+      <span class="modal-ingredient-value modal-ingredients-circle">320</span>
+      <span class="modal-ingredient-description">kcal</span>
+    </li>
+    <li class="modal-icecream-item">
+      <span class="modal-ingredient-value modal-ingredients-circle">4g</span>
+      <span class="modal-ingredient-description">Prote...</span>
+    </li>
+    <li class="modal-icecream-item">
+      <span class="modal-ingredient-value modal-ingredients-circle">8,2g</span>
+      <span class="modal-ingredient-description">Fats</span>
+    </li>
+    <li class="modal-icecream-item">
+      <span class="modal-ingredient-value modal-ingredients-circle">40,4g</span>
+      <span class="modal-ingredient-description">Carbs</span>
+    </li>
+  </ul>
+  <p class="modal-ingredients-page">Ingredients</p>
+  <ul class="modal-ingredients-list list">
+    <li class="modal-ingredients-item"><span>Milk</span><span>100ml</span></li>
+    <li class="modal-ingredients-item">
+      <span>Belgian chocolate</span><span>20g</span>
+    </li>
+    <li class="modal-ingredients-item"><span>Cream</span><span>150ml</span></li>
+    <li class="modal-ingredients-item">
+      <span>Cocoa powder</span><span>30g</span>
+    </li>
+    <li class="modal-ingredients-item"><span>Sugar</span><span>40g</span></li>
+    <li class="modal-ingredients-item">
+      <span>Vanilla sugar</span><span>10g</span>
+    </li>
+  </ul>
+  <form class="modal-ingredients-form">
+    <div class="modal-wrapper-box">
+      <input
+        class="modal-input"
+        type="text"
+        name="user_name"
+        required
+        pattern="^[a-zA-Z]+$"
+        placeholder="Name"
+      />
+      <input
+        class="modal-input"
+        type="tel"
+        name="user_tel"
+        required
+        pattern="[0-9+]+"
+        placeholder="Phone"
+      />
+      <textarea
+        class="modal-input-comment"
+        name="user_comment"
+        placeholder="Text input"
+      ></textarea>
+    </div>
+    <button type="submit" class="send-button">Submit</button>
+  </form>
 </div>
 
-<div class="modal" data-modal="3">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p>Заголовок окна 3</p>
+<!-- Modal Ingredients "3" -->
+<div class="modal-ingredients modal" data-modal="3">
+  <button type="button" class="button-close">
+    <svg class="icon-close modal__cross js-modal-close" width="11" height="11">
+      <use href="./images/icons.svg#icon-cross"></use>
+    </svg>
+  </button>
+  <p class="modal-icecream-page">Chocolate icecoffee</p>
+  <div class="modal-icecoffee-image"></div>
+  <ul class="modal-icecream-list list">
+    <li class="modal-icecream-item icecoffee-item">
+      <span
+        class="modal-ingredient-value modal-ingredients-circle icecoffee-circle"
+        >320</span
+      >
+      <span class="modal-ingredient-description">kcal</span>
+    </li>
+    <li class="modal-icecream-item icecoffee-item">
+      <span
+        class="modal-ingredient-value modal-ingredients-circle icecoffee-circle"
+        >4g</span
+      >
+      <span class="modal-ingredient-description">Prote...</span>
+    </li>
+    <li class="modal-icecream-item icecoffee-item">
+      <span
+        class="modal-ingredient-value modal-ingredients-circle icecoffee-circle"
+        >8,2g</span
+      >
+      <span class="modal-ingredient-description">Fats</span>
+    </li>
+    <li class="modal-icecream-item icecoffee-item">
+      <span
+        class="modal-ingredient-value modal-ingredients-circle icecoffee-circle"
+        >40,4g</span
+      >
+      <span class="modal-ingredient-description">Carbs</span>
+    </li>
+  </ul>
+  <p class="modal-ingredients-page">Ingredients</p>
+  <ul class="modal-ingredients-list list">
+    <li class="modal-ingredients-item"><span>Milk</span><span>100ml</span></li>
+    <li class="modal-ingredients-item">
+      <span>Belgian chocolate</span><span>20g</span>
+    </li>
+    <li class="modal-ingredients-item"><span>Cream</span><span>150ml</span></li>
+    <li class="modal-ingredients-item">
+      <span>Cocoa powder</span><span>30g</span>
+    </li>
+    <li class="modal-ingredients-item"><span>Sugar</span><span>40g</span></li>
+    <li class="modal-ingredients-item">
+      <span>Vanilla sugar</span><span>10g</span>
+    </li>
+  </ul>
+  <form class="modal-ingredients-form">
+    <div class="modal-wrapper-box">
+      <input
+        class="modal-input icecoffee-input"
+        type="text"
+        name="user_name"
+        required
+        pattern="^[a-zA-Z]+$"
+        placeholder="Name"
+      />
+      <input
+        class="modal-input icecoffee-input"
+        type="tel"
+        name="user_tel"
+        required
+        pattern="[0-9+]+"
+        placeholder="Phone"
+      />
+      <textarea
+        class="modal-input-comment icecoffee-input"
+        name="user_comment"
+        placeholder="Text input"
+      ></textarea>
+    </div>
+    <button type="submit" class="send-button">Submit</button>
+  </form>
 </div>
 
-<div class="modal" data-modal="4">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p>Заголовок окна 4</p>
+<!-- Modal Ingredients "4" -->
+<div class="modal-ingredients modal" data-modal="4">
+  <button type="button" class="button-close">
+    <svg class="icon-close modal__cross js-modal-close" width="11" height="11">
+      <use href="./images/icons.svg#icon-cross"></use>
+    </svg>
+  </button>
+  <p class="modal-icecream-page">Chocolate milkshake</p>
+  <div class="modal-milkshake-image"></div>
+  <ul class="modal-icecream-list list">
+    <li class="modal-icecream-item milkshake-item">
+      <div class="modal-ingredients-circle milkshake-circle">
+        <span class="modal-ingredient-value">320</span>
+      </div>
+      <span class="modal-ingredient-description">kcal</span>
+    </li>
+    <li class="modal-icecream-item milkshake-item">
+      <span
+        class="modal-ingredient-value modal-ingredients-circle milkshake-circle"
+        >4g</span
+      >
+      <span class="modal-ingredient-description">Prote...</span>
+    </li>
+    <li class="modal-icecream-item milkshake-item">
+      <span
+        class="modal-ingredient-value modal-ingredients-circle milkshake-circle"
+        >8,2g</span
+      >
+      <span class="modal-ingredient-description">Fats</span>
+    </li>
+    <li class="modal-icecream-item milkshake-item">
+      <span
+        class="modal-ingredient-value modal-ingredients-circle milkshake-circle"
+        >40,4g</span
+      >
+      <span class="modal-ingredient-description">Carbs</span>
+    </li>
+  </ul>
+  <p class="modal-ingredients-page">Ingredients</p>
+  <ul class="modal-ingredients-list list">
+    <li class="modal-ingredients-item"><span>Milk</span><span>100ml</span></li>
+    <li class="modal-ingredients-item">
+      <span>Belgian chocolate</span><span>20g</span>
+    </li>
+    <li class="modal-ingredients-item"><span>Cream</span><span>150ml</span></li>
+    <li class="modal-ingredients-item">
+      <span>Cocoa powder</span><span>30g</span>
+    </li>
+    <li class="modal-ingredients-item"><span>Sugar</span><span>40g</span></li>
+    <li class="modal-ingredients-item">
+      <span>Vanilla sugar</span><span>10g</span>
+    </li>
+  </ul>
+  <form class="modal-ingredients-form">
+    <div class="modal-wrapper-box">
+      <input
+        class="modal-input milkshake-input"
+        type="text"
+        name="user_name"
+        required
+        pattern="^[a-zA-Z]+$"
+        placeholder="Name"
+      />
+      <input
+        class="modal-input milkshake-input"
+        type="tel"
+        name="user_tel"
+        required
+        pattern="[0-9+]+"
+        placeholder="Phone"
+      />
+      <textarea
+        class="modal-input-comment milkshake-input"
+        name="user_comment"
+        placeholder="Text input"
+      ></textarea>
+    </div>
+    <button type="submit" class="send-button">Submit</button>
+  </form>
 </div>
-
-<!-- Подложка под модальным окном -->
+<!-- Підложка під модальне вікно -->
 <div class="overlay js-overlay-modal"></div>
