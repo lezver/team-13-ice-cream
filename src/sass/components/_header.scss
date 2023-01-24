@@ -1,18 +1,6 @@
 .header {
   background-color: $background-green;
 }
-a {
-  color: currentColor;
-  text-decoration: none;
-  transition: color $time $time-distribution;
-  &:visited {
-    color: currentColor;
-  }
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
 .page-header .navbar {
   min-height: 37px;
   display: flex;
@@ -130,7 +118,14 @@ ul {
   align-items: center;
   text-align: center;
   color: $almost-white;
-
+  a {
+    color: currentColor;
+    text-decoration: none;
+    transition: color $time $time-distribution;
+    &:visited {
+      color: currentColor;
+    }
+  }
   @include breakpoint(tab) {
     font-size: 48px;
     line-height: 1.22;
@@ -200,7 +195,9 @@ ul {
   }
 }
 .navigation-list {
+  @extend %list-style;
   @include breakpoint(des) {
+    margin-left: 55px;
     display: flex;
     flex-wrap: wrap;
     width: 444px;
