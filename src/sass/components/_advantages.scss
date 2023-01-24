@@ -7,6 +7,12 @@
   background-color: $background-green;
   color: $almost-white;
   padding-bottom: 70px;
+  @include breakpoint(tab) {
+    padding-bottom: 200px;
+  }
+  @include breakpoint(des) {
+    padding-bottom: 178px;
+  }
 }
 
 .visually-hidden {
