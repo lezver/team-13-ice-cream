@@ -83,8 +83,7 @@
   border-radius: 10px;
   text-decoration: none;
   border: none;
-  transition: color $time $time-distribution;
-  transition: background-color $time $time-distribution;
+  transition: background-color $time $time-distribution, color $time $time-distribution;;
 
   &:hover {
     background-color: #0a8817;
