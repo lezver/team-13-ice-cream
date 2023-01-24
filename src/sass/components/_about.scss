@@ -1,241 +1,254 @@
 .about {
-    background-color: $background-green;
-    padding: 60px 0;
+  background-color: $background-green;
+  padding: 60px 0;
 }
 
 .about-container,
 .about-made_icecream {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-lable {
-    text-transform: uppercase;
-    margin-bottom: 12px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.22;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
 }
 
 .about-title {
-    width: 200px;
-    text-align: center;
-    margin-bottom: 32px;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 32px;
 
-    font-family: 'Seymour One';
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1.26;
+  font-family: 'Seymour One';
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
 }
 
 .about-image {
-    position: relative;
-    margin-bottom: 40px;
+  position: relative;
+  margin-bottom: 40px;
 
-    height: 300px;
+  height: 300px;
+  img {
+    @include breakpoint(tab) {
+      width: 330px;
+    }
+    @include breakpoint(des) {
+      width: 490px;
+    }
+  }
 }
 
 .about-bg {
-    width: 280px;
-    height: 278px;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-    border-radius: 140px;
+  width: 280px;
+  height: 278px;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  border-radius: 140px;
 }
 
 .cow-image {
-    position: absolute;
-    top: 22px;
-    border-radius: 50%;
+  position: absolute;
+  top: 22px;
+  border-radius: 50%;
 }
 
 .about-dscript_btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-container_description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    margin-bottom: 24px;
-    width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 24px;
+  width: 220px;
 }
 
 .about-description {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 162%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 162%;
 
-    text-align: center;
-    letter-spacing: 0.04em;
+  text-align: center;
+  letter-spacing: 0.04em;
 }
 
 .about-description:first-child {
-    line-height: 176%;
+  line-height: 176%;
 }
 
 .about-btn_more {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 
-    background: $almost-yellow;
-    border-radius: 10px;
-    border-color: rgba(255, 255, 255, 0);
-    outline: none;
-    width: 164px;
-    height: 42px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.28;
-    color: #000000;
+  background: $almost-yellow;
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0);
+  outline: none;
+  width: 164px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #000000;
 
-    transition: color $time $time-distribution,
+  transition: color $time $time-distribution,
     background-color $time $time-distribution;
 }
 
 .about-btn_more:hover {
-    background: #0A8817;
+  background: #0a8817;
 }
 
 .about-btn_more:focus {
-    color: $almost-white;
-    background: #0A8817;
+  color: $almost-white;
+  background: #0a8817;
 }
 
 .about-svg_arrow {
-    fill: currentColor;
+  fill: currentColor;
 }
 
 @media screen and (min-width: 768px) {
-    .about {
-        background-color: #84A178;
-    }
+  .about {
+    background-color: #84a178;
+  }
 
-    .about-container {
-        padding: 0 32px;
-    }
+  .about-container {
+    padding: 0 32px;
+  }
 
-    .about-lable {
-        font-weight: 800;
-        font-size: 22px;
-        line-height: 1.23;
-    }
+  .about-lable {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.23;
+  }
 
-    .about-title {
-        width: 100%;
-        font-weight: 400;
-        font-size: 34px;
-        line-height: 1.26;
-        letter-spacing: 0.06em;
+  .about-title {
+    width: 100%;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.26;
+    letter-spacing: 0.06em;
 
-        margin-bottom: 72px;
-    }
+    margin-bottom: 72px;
+  }
 
-    .about-made_icecream {
-        flex-direction: row;
-        align-items: flex-start;
-    }
+  .about-made_icecream {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 
-    .about-image {
-        margin-bottom: 0;
-        margin-right: 38px;
+  .about-image {
+    margin-bottom: 0;
+    margin-right: 38px;
 
-        height: 356px;
-    }
+    height: 356px;
+  }
 
-    .about-bg {
-        width: 330px;
-        height: 330px;
-        box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
-        border-radius: 165px;
-    }
+  .about-bg {
+    width: 330px;
+    height: 330px;
+    box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+    border-radius: 165px;
+  }
 
-    .cow-image {
-        top: 26px;
-    }
+  .cow-image {
+    top: 26px;
+  }
 
-    .about-container_description {
-        width: 336px;
+  .about-container_description {
+    width: 336px;
 
-        margin-bottom: 32px;
-        gap: 8px;
-    }
+    margin-bottom: 32px;
+    gap: 8px;
+  }
 
-    .about-dscript_btn {
-        align-items: flex-start;
-    }
+  .about-dscript_btn {
+    align-items: flex-start;
+  }
 
-    .about-description {
-        text-align: start;
+  .about-description {
+    text-align: start;
 
-        line-height: 176%;
-    }
+    line-height: 176%;
+  }
 
-    .about-description:last-child {
-        line-height: 192%;
-    }
+  .about-description:last-child {
+    line-height: 192%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .about-container {
-        padding: 0 16px;
-    }
+  .about-container {
+    padding: 0 16px;
+  }
 
-    .about-lable {
-        font-size: 30px;
-        line-height: 1.23;
-    }
+  .about-lable {
+    font-size: 30px;
+    line-height: 1.23;
+  }
 
-    .about-title {
-        width: 100%;
-        font-size: 36px;
-        line-height: 1.25;
+  .about-title {
+    width: 100%;
+    font-size: 36px;
+    line-height: 1.25;
 
-        margin-bottom: 82px;
-    }
+    margin-bottom: 82px;
+  }
 
-    .about-image {
-        margin-right: 110px;
-        height: 530px;
-    }
+  .about-image {
+    margin-right: 110px;
+    height: 530px;
+  }
 
-    .about-bg {
-        width: 490px;
-        height: 490px;
-        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-        border-radius: 250px;
-    }
+  .about-bg {
+    width: 490px;
+    height: 490px;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    border-radius: 250px;
+  }
 
-    .cow-image {
-        top: 40px;
-    }
+  .cow-image {
+    top: 40px;
+  }
 
-    .about-container_description {
-        width: 464px;
-        align-items: flex-start;
+  .about-container_description {
+    width: 464px;
+    align-items: flex-start;
 
-        margin-bottom: 54px;
-    }
+    margin-bottom: 54px;
+  }
 
-    .about-description:nth-child(n + 2) {
-        line-height: 194%;
-        font-size: 14px;
-    }
+  .about-description:nth-child(n + 2) {
+    line-height: 194%;
+    font-size: 14px;
+  }
 
-    .about-description {
-        font-size: 16px;
-    }
+  .about-description {
+    font-size: 16px;
+  }
 
-    .about-made_icecream {
-        align-items: center;
-    }
+  .about-made_icecream {
+    align-items: center;
+  }
 }

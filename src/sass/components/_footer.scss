@@ -1,42 +1,15 @@
 .footer {
-  padding-bottom: 20px;
+  padding: 30px 0 20px;
   background-color: #84a178;
   @include breakpoint(tab) {
+    padding-top: 20px;
+  }
+  @include breakpoint(des) {
+    padding-top: 60px;
   }
 }
 .list {
   list-style: none;
-}
-
-.location {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 196px;
-  height: 42px;
-  background-color: #f8d24e;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: border $time $time-distribution,
-    background-color $time $time-distribution, opacity $time $time-distribution;
-}
-.franchise {
-  display: flex;
-  align-items: center;
-  width: 196px;
-  height: 42px;
-  padding: 12px 55px;
-  background-color: #84a178;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: color $time $time-distribution, opacity $time $time-distribution,
-    background-color $time $time-distribution, border $time $time-distribution;
-  > .footer-icon-arrow {
-    fill: black;
-    transition: fill $time $time-distribution;
-  }
 }
 .basement {
   padding-top: 60px;
