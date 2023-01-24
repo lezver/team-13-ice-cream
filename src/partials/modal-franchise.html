@@ -5,35 +5,62 @@
 <!-- Несколько модальных окон -->
 <div class="modal modal-franchise" data-modal="9">
   <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-  <use href="./images/icons.svg#icon-cross"></use>
+  <svg class="modal__cross js-modal-close">
+    <use href="./images/icons.svg#icon-cross"></use>
   </svg>
-  <p class="title-modal-franchise">Thank you for your interest in owning an Ice Cream shop</p>
-  <p class="text-modal-franchise">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at
-    this
-    time. Once the application process resumes, we will contact you for further information. Please fill out
-    the
-    contact information below and we will reach out for additional information. We appreciate your patience.
-</p>
-<form class="form-modal-franchise">
-  <label class="label-modal-franchise">
-      <input class="input-modal-franchise" type="text" name="name_modal_franchise" placeholder="Name" pattern="^[a-zA-Z]+$" title="Enter your name" required>
-  </label>
-  <label class="label-modal-franchise">
-      <input class="input-modal-franchise" type="tel" name="phone_modal_franchise" placeholder="Phone" pattern="[+][0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Enter your phone number in this format: +380-00-000-00-00" required>
-  </label>
-  <label class="label-modal-franchise">
-      <input class="input-modal-franchise" type="email" name="email_modal_franchise" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter your Email address in this format: example@gmail.com" required>
-  </label>
-  <label>
-      <textarea class="textarea-modal-franchise" name="comment_modal_franchise" placeholder="Comment"></textarea>
-  </label>
-  <button type="submit" class="submit-button-modal-franchise">Submit</button>
-</form>
+  <p class="title-modal-franchise">
+    Thank you for your interest in owning an Ice Cream shop
+  </p>
+  <p class="text-modal-franchise">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
+  <form class="form-modal-franchise">
+    <label class="label-modal-franchise">
+      <input
+        class="input-modal-franchise"
+        type="text"
+        name="name_modal_franchise"
+        placeholder="Name"
+        pattern="^[a-zA-Z]+$"
+        title="Enter your name"
+        required
+      />
+    </label>
+    <label class="label-modal-franchise">
+      <input
+        class="input-modal-franchise"
+        type="tel"
+        name="phone_modal_franchise"
+        placeholder="Phone"
+        pattern="[+][0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="Enter your phone number in this format: +380-00-000-00-00"
+        required
+      />
+    </label>
+    <label class="label-modal-franchise">
+      <input
+        class="input-modal-franchise"
+        type="email"
+        name="email_modal_franchise"
+        placeholder="Email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        title="Enter your Email address in this format: example@gmail.com"
+        required
+      />
+    </label>
+    <label>
+      <textarea
+        class="textarea-modal-franchise"
+        name="comment_modal_franchise"
+        placeholder="Comment"
+      ></textarea>
+    </label>
+    <button type="submit" class="submit-button-modal-franchise">Submit</button>
+  </form>
 </div>
 <!-- Подложка под модальным окном -->
 <div class="overlay js-overlay-modal"></div>
