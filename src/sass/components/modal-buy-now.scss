@@ -1,4 +1,8 @@
 .modal-product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
@@ -7,7 +11,8 @@
   .modal-product-card {
     position: absolute;
     top: 10%;
-    width: 90%;
+    width: 280px;
+
     left: 50%;
     transform: translate(-50%, 0);
   }
@@ -16,7 +21,8 @@
   .modal-product-card {
     position: absolute;
     top: 10%;
-    width: 90%;
+    max-width: 568px;
+    height: 664px;
     left: 50%;
     transform: translate(-50%, 0);
   }
