@@ -6,7 +6,9 @@ body {
   letter-spacing: 0.04rem;
   color: $almost-white;
 }
-
+a {
+  text-decoration: none;
+}
 // Номер телефона у футері
 // font-family: 'DM Sans', sans-serif;
 // Заголовки
