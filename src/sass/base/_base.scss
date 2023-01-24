@@ -47,7 +47,6 @@ svg {
   }
 }
 /* Стили для подложки */
-
 .overlay {
   /* Скрываем подложку  */
   opacity: 0;
@@ -62,24 +61,17 @@ svg {
   z-index: 20;
   transition: 0.3s all;
 }
-
 /* Стили для модальных окон */
-
 .modal {
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
-
-  /*  Установаем ширину окна  */
-  width: 100%;
-
   /*  Центрируем и задаем z-index */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30; /* Должен быть выше чем у подложки*/
-
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -88,17 +80,13 @@ svg {
   background-color: $almost-black;
   transition: 0.3s all;
 }
-
 /* Стили для активных классов подложки и окна */
-
 .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
 }
-
 /* Стили для кнопки закрытия */
-
 .modal__cross {
   width: 15px;
   height: 15px;
