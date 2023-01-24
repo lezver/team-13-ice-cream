@@ -107,15 +107,6 @@
     background-image: url('../images/modal/picture-four/picture@2x.jpg');
   }
 }
-
-@media screen and (min-device-pixel-ratio: 3),
-  screen and (min-resolution: 288dpi),
-  screen and (min-resolution: 3dppx) {
-  .modal-icecream-image::after {
-    background-image: url('../images/modal/picture-four/picture@3x.jpg');
-  }
-}
-
 .modal-icecream-list {
   display: flex;
   margin-top: 22px;
@@ -123,7 +114,6 @@
   gap: 9px;
   justify-content: center;
 }
-
 .modal-icecream-item {
   display: flex;
   flex-direction: column;
@@ -135,7 +125,6 @@
   padding-left: 3px;
   padding-right: 3px;
 }
-
 .modal-ingredients-circle {
   display: flex;
   justify-content: center;
@@ -149,7 +138,6 @@
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   text-align: center;
 }
-
 .modal-ingredient-value {
   font-family: 'Montserrat';
   font-weight: 500;
@@ -157,7 +145,6 @@
   line-height: 2.8;
   color: #131313;
 }
-
 .modal-ingredient-description {
   font-family: 'Montserrat';
   font-weight: 400;
@@ -166,7 +153,6 @@
   text-align: center;
   color: #131313;
 }
-
 .modal-ingredients-page {
   font-family: 'Montserrat';
   font-weight: 500;
@@ -278,7 +264,6 @@
   line-height: 1.43;
   color: #131313;
 }
-
 /* Marking Send Button */
 .send-button {
   align-self: center;
@@ -300,7 +285,6 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .send-button:hover,
 .send-button:focus {
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
@@ -386,7 +370,7 @@
   content: '';
   border-radius: 50%;
   background-color: #f8d24e;
-  background-image: url(/src/images/modal/picture-four/picture.jpg);
+  background-image: url('../images/modal/picture-four/picture.jpg');
   background-size: contain;
 }
 
@@ -394,15 +378,7 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .modal-icecoffee-image::after {
-    background-image: url(/src/images/modal/picture-four/picture@2x.jpg);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 3),
-  screen and (min-resolution: 288dpi),
-  screen and (min-resolution: 3dppx) {
-  .modal-icecoffee-image::after {
-    background-image: url(/src/images/modal/picture-four/picture@3x.jpg);
+    background-image: url('../images/modal/picture-four/picture@2x.jpg');
   }
 }
 .modal-ingredients-circle.icecoffee-circle {
@@ -420,14 +396,12 @@
   background-color: rgba(239, 212, 120, 0.1);
   border: 1px solid #efd478;
 }
-
 // Marking Modal Ingredients "4"
 .modal-milkshake-image {
   margin: 0 auto;
   width: 132px;
   height: 150px;
 }
-
 .modal-milkshake-image::before {
   display: block;
   position: relative;
@@ -444,7 +418,6 @@
   content: '';
   border-radius: 50%;
 }
-
 .modal-milkshake-image::after {
   display: block;
   position: relative;
@@ -454,40 +427,27 @@
   content: '';
   border-radius: 50%;
   background-color: #d5753f;
-  background-image: url(/src/images/modal/picture-four/picture.jpg);
+  background-image: url('../images/modal/picture-four/picture.jpg');
   background-size: contain;
 }
-
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .modal-milkshake-image::after {
-    background-image: url(/src/images/modal/picture-four/picture@2x.jpg);
+    background-image: url('../images/modal/picture-four/picture@2x.jpg');
   }
 }
-
-@media screen and (min-device-pixel-ratio: 3),
-  screen and (min-resolution: 288dpi),
-  screen and (min-resolution: 3dppx) {
-  .modal-milkshake-image::after {
-    background-image: url(/src/images/modal/picture-four/picture@3x.jpg);
-  }
-}
-
 .modal-ingredients-circle.milkshake-circle {
   background-color: #d6936d;
   box-shadow: 0px 6px 20px rgba(214, 147, 109, 0.25);
 }
-
 .modal-icecream-item.milkshake-item {
   border: 2px solid #d6936d;
 }
-
 .modal-input.milkshake-input {
   background-color: rgba(214, 147, 109, 0.1);
   border: 1px solid #d6936d;
 }
-
 .modal-input-comment.milkshake-input {
   background-color: rgba(214, 147, 109, 0.1);
   border: 1px solid #d6936d;

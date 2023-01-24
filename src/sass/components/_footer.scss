@@ -1,15 +1,13 @@
 .footer {
   padding-bottom: 20px;
   background-color: #84a178;
+  @include breakpoint(tab) {
+  }
 }
 .list {
   list-style: none;
 }
-.footer-btn-name {
-  @extend %basic-btn;
-  padding-right: 4px;
-  transition: opacity $time $time-distribution, color $time $time-distribution;
-}
+
 .location {
   display: flex;
   align-items: center;
@@ -22,20 +20,6 @@
   cursor: pointer;
   transition: border $time $time-distribution,
     background-color $time $time-distribution, opacity $time $time-distribution;
-}
-.location:focus {
-  background-color: #0a8817;
-  border: 2px solid #0a8817;
-}
-.location:focus .footer-btn-name {
-  color: #ffffff;
-}
-.location:focus .footer-icon-arrow {
-  fill: #ffffff;
-}
-.location:disabled {
-  background: #ababab;
-  border-radius: 10px;
 }
 .franchise {
   display: flex;
@@ -53,23 +37,6 @@
     fill: black;
     transition: fill $time $time-distribution;
   }
-}
-.franchise:focus {
-  border: 2px solid #0a8817;
-  border-radius: 10px;
-}
-.franchise:focus .footer-btn-name {
-  color: #ffffff;
-}
-.franchise:focus .footer-icon-arrow {
-  fill: #ffffff;
-}
-.franchise:disabled {
-  border: 2px solid #ababab;
-  border-radius: 10px;
-}
-.footer-btn-icon {
-  display: inline-flex;
 }
 .basement {
   padding-top: 60px;
@@ -157,13 +124,7 @@
     display: flex;
     flex-direction: column;
   }
-  .footer-btns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    align-items: center;
-  }
+
   .social-media {
     display: flex;
     justify-content: flex-end;
@@ -201,9 +162,6 @@
     gap: 0;
     padding-bottom: 32px;
   }
-  .footer-btns {
-    flex-direction: row;
-  }
   .footer-subtitle {
     font-size: 26px;
   }
@@ -224,47 +182,11 @@
     font-size: 14px;
   }
 }
-@media screen and (max-width: 1159px) {
+@media screen and (min-width: 1200px) {
+  .footer-icon-network:hover,
   .footer-icon-network:active {
     fill: #fcfcfc;
     color: #fcfcfc;
-  }
-  .location:active {
-    background: #0a8817;
-    border-radius: 10px;
-  }
-  .franchise:active {
-    border: 2px solid #0a8817;
-    border-radius: 10px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-icon-network:hover {
-    fill: #fcfcfc;
-    color: #fcfcfc;
-  }
-  .location {
-    > .footer-icon-arrow {
-      fill: black;
-      transition: fill $time $time-distribution;
-    }
-    &:active > .footer-icon-arrow {
-      fill: white;
-    }
-  }
-  .location:hover {
-    background: #0a8817;
-    border: 1px solid #0a8817;
-    border-radius: 10px;
-  }
-  .franchise:hover {
-    border: 2px solid #0a8817;
-    border-radius: 10px;
-  }
-  .franchise:active {
-    > .footer-icon-arrow {
-      fill: white;
-    }
   }
   .text-duplicate-header {
     width: 504px;
