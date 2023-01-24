@@ -1,18 +1,6 @@
 .header {
   background-color: $background-green;
 }
-a {
-  color: currentColor;
-  text-decoration: none;
-    transition: color $time $time-distribution;
-  &:visited {
-    color: currentColor;
-  }
-}
-ul{
-  margin: 0;
-  padding: 0;
-}
 .page-header .navbar {
   min-height: 37px;
   display: flex;
@@ -61,8 +49,9 @@ ul{
   width: 32px;
   height: 32px;
   fill: $almost-white;
-    transition: fill $time $time-distribution;
-  &:hover, &:focus {
+  transition: fill $time $time-distribution;
+  &:hover,
+  &:focus {
     fill: $almost-yellow;
   }
 }
@@ -73,8 +62,9 @@ ul{
   right: 32px;
   top: 26px;
   fill: $almost-white;
-    transition: fill $time $time-distribution;
-  &:hover, &:focus {
+  transition: fill $time $time-distribution;
+  &:hover,
+  &:focus {
     fill: $almost-yellow;
   }
 }
@@ -93,9 +83,8 @@ ul{
   border-radius: 10px;
   text-decoration: none;
   border: none;
-    transition: color $time $time-distribution;
-    transition: background-color $time $time-distribution;
-
+  transition: color $time $time-distribution;
+  transition: background-color $time $time-distribution;
 
   &:hover {
     background-color: #0a8817;
@@ -119,7 +108,6 @@ ul{
   position: absolute;
   top: 12px;
   left: 20px;
-
 }
 .navigation-item {
   justify-content: center;
@@ -129,8 +117,15 @@ ul{
   display: flex;
   align-items: center;
   text-align: center;
- color: $almost-white;
-  
+  color: $almost-white;
+  a {
+    color: currentColor;
+    text-decoration: none;
+    transition: color $time $time-distribution;
+    &:visited {
+      color: currentColor;
+    }
+  }
   @include breakpoint(tab) {
     font-size: 48px;
     line-height: 1.22;
@@ -147,11 +142,12 @@ ul{
     &:not(:last-child) {
       margin-bottom: 40px;
     }
-    &:last-child{
-    margin-bottom: 114px;
+    &:last-child {
+      margin-bottom: 114px;
     }
-    &:hover, &:focus{
-    color: $almost-black;
+    &:hover,
+    &:focus {
+      color: $almost-black;
     }
   }
 }
@@ -199,7 +195,9 @@ ul{
   }
 }
 .navigation-list {
+  @extend %list-style;
   @include breakpoint(des) {
+    margin-left: 55px;
     display: flex;
     flex-wrap: wrap;
     width: 444px;
@@ -214,7 +212,6 @@ ul{
     width: 60px;
     height: 65px;
     fill: $almost-yellow;
-
   }
   @media (max-width: 1199px) {
     display: none;
@@ -234,21 +231,18 @@ ul{
     display: none;
   }
 }
-.menu{
+.menu {
   @media (max-width: 1199px) {
     display: none;
   }
 }
-  .popup.open {
-@media (max-width: 1199px) {
-
+.popup.open {
+  @media (max-width: 1199px) {
     right: 0;
   }
-  }
+}
 body.noscroll {
   @media (max-width: 1199px) {
-
-  
     overflow: hidden;
   }
 }

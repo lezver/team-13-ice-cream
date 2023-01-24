@@ -1,0 +1,93 @@
+@media screen and (min-width: 768px){
+    .yt-video {
+        width: 448px;
+        height: 205px;
+        border-radius: 10px;
+        border: 0px solid black;
+      }
+      .title-modal-more {
+        margin-bottom: 20px;
+        font-family: "Seymour One";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center;
+        color: #131313;
+      }
+      .more {
+        font-family: "Montserrat";
+        font-size: 16px;
+        line-height: 1.25;
+        margin-top: 20px;
+        color: #131313;
+      }
+      .modal__cross{
+        width: 13.33px;
+        height: 13.33px;
+        position: absolute;
+        top: 17.33px;
+        right: 17.34px;
+        background-color: #fcfcfc;
+        border: 0;
+        cursor: pointer;
+      }
+      .modal {
+        width: min-content;
+        height: auto;
+        background: #fcfcfc;
+        border: 2px solid #f8d24e;
+        border-radius: 10px;
+        padding: 32px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .close-button {
+      width: 13.33px;
+      height: 13.33px;
+      position: absolute;
+      top: 16.44px;
+      right: 16.48px;
+      background-color: #fcfcfc;
+      border: 0;
+      cursor: pointer;
+    }
+    .modal {
+      width: min-content;
+      height: auto;
+      background: #fcfcfc;
+      border: 2px solid #f8d24e;
+      border-radius: 10px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .yt-video {
+      width: 224px;
+      height: 199px;
+      border-radius: 10px;
+    }
+    .title-modal-more {
+      margin-bottom: 20px;
+      font-family: "Seymour One";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #131313;
+    }
+    .more {
+      font-family: "Montserrat";
+      font-size: 14px;
+      line-height: 1.4;
+      margin-top: 20px;
+      color: #131313;
+    }
+  }
