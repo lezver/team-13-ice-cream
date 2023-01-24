@@ -2,8 +2,9 @@
     background-color: $background-green;
     padding: 60px 0;
 }
-// 31 рядок, однакові стилі,не виходить об`еднати класи
-.about-container {
+
+.about-container,
+.about-made_icecream {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,12 +29,6 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 1.26;
-}
-// 6 рядок, однакові стилі,не виходить об'еднати класи
-.about-made_icecream {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .about-image {
