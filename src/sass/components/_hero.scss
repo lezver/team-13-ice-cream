@@ -41,6 +41,7 @@
 }
 
 .hero-products-btn {
+    z-index: 2;
     cursor: pointer;
 
     font-family: inherit;
@@ -72,6 +73,7 @@
 }
 
 .how-its-made {
+    z-index: 2;
     color: $almost-yellow;
 
     font-size: 12px;
@@ -118,9 +120,6 @@
     right: 0;
     bottom: 0;
 
-    background-image: url(../images/hero/mobile320/circles/circles.png);
-    background-repeat: no-repeat;
-
     display: block;
     width: 320px;
     height: 49.11px;
@@ -132,9 +131,6 @@
     position: absolute;
     right: 60px;
     bottom: 0;
-
-    background-image: url(../images/hero/mobile320/ice-cream/ice-cream.png);
-    background-repeat: no-repeat;
 
     display: block;
     width: 177px;
@@ -159,15 +155,11 @@
     }
 
     .hero-circles {
-        background-image: url(../images/hero/mobile480/circles/circles.png);
-
         width: 320px;
         height: 49.11px;
     }
 
     .hero-ice-cream {
-        background-image: url(../images/hero/mobile480/ice-cream/ice-cream.png);
-
         right: 20px;
 
         width: 218px;
@@ -269,15 +261,11 @@
     }
 
     .hero-circles {
-        background-image: url(../images/hero/tablet/circles/circles.png);
-
         width: 768px;
         height: 67.79px;
     }
 
     .hero-ice-cream {
-        background-image: url(../images/hero/tablet/ice-cream/ice-cream.png);
-
         right: 92px;
 
         width: 268px;
@@ -290,9 +278,6 @@
         position: absolute;
         left: 32px;
         bottom: 12px;
-
-        background-image: url(../images/hero/tablet/lot-of-ice-cream/lot-of-ice-cream.png);
-        background-repeat: no-repeat;
 
         display: block;
         width: 152px;
@@ -386,15 +371,11 @@
     }
 
     .hero-circles {
-        background-image: url(../images/hero/desktop/circles/circles.png);
-
         width: 1200px;
         height: 383.46px;
     }
 
     .hero-ice-cream {
-        background-image: url(../images/hero/desktop/ice-cream/ice-cream.png);
-
         width: 456px;
         height: 560px;
 
@@ -405,8 +386,6 @@
         position: absolute;
         left: 16px;
         bottom: 65px;
-
-        background-image: url(../images/hero/desktop/lot-of-ice-cream/lot-of-ice-cream.png);
 
         display: block;
         width: 225px;
@@ -419,30 +398,22 @@
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
     .hero-circles {
-        background-image: url(../images/hero/mobile320/circles/circles@2x.png);
-        background-size: contain;
         width: 320px;
         height: 50px;
     }
 
     .hero-ice-cream {
-        background-image: url(../images/hero/mobile320/ice-cream/ice-cream@2x.png);
-        background-size: contain;
         width: 177px;
         height: 217px;
     }
 
     @media screen and (min-width: 480px) {
         .hero-circles {
-            background-image: url(../images/hero/mobile480/circles/circles@2x.png);
-            background-size: contain;
             width: 330px;
             height: 52px;
         }
 
         .hero-ice-cream {
-            background-image: url(../images/hero/mobile480/ice-cream/ice-cream@2x.png);
-            background-size: contain;
             width: 218px;
             height: 267px;
         }
@@ -450,22 +421,16 @@ screen and (min-resolution: 2dppx) {
 
     @media screen and (min-width: 768px) {
         .hero-circles {
-            background-image: url(../images/hero/tablet/circles/circles@2x.png);
-            background-size: contain;
             width: 768px;
             height: 67.79px;
         }
 
         .hero-ice-cream {
-            background-image: url(../images/hero/tablet/ice-cream/ice-cream@2x.png);
-            background-size: contain;
             width: 268px;
             height: 329px;
         }
 
         .hero-lot-cream {
-            background-image: url(../images/hero/tablet/lot-of-ice-cream/lot-of-ice-cream@2x.png);
-            background-size: contain;
             width: 152px;
             height: 152px;
         }
@@ -473,22 +438,16 @@ screen and (min-resolution: 2dppx) {
 
     @media screen and (min-width:1200px) {
         .hero-circles {
-            background-image: url(../images/hero/desktop/circles/circles@2x.png);
-            background-size: contain;
             width: 1200px;
             height: 383.46px;
         }
 
         .hero-ice-cream {
-            background-image: url(../images/hero/desktop/ice-cream/ice-cream@2x.png);
-            background-size: contain;
             width: 456px;
             height: 560px;
         }
 
         .hero-lot-cream {
-            background-image: url(../images/hero/desktop/lot-of-ice-cream/lot-of-ice-cream@2x.png);
-            background-size: contain;
             width: 225px;
             height: 225px;
         }
@@ -500,30 +459,22 @@ screen and (min-resolution: 2dppx) {
 screen and (min-resolution: 288dpi),
 screen and (min-resolution: 3dppx) {
     .hero-circles {
-        background-image: url(../images/hero/mobile320/circles/circles@3x.png);
-        background-size: contain;
         width: 320px;
         height: 50px;
     }
 
     .hero-ice-cream {
-        background-image: url(../images/hero/mobile320/ice-cream/ice-cream@3x.png);
-        background-size: contain;
         width: 177px;
         height: 217px;
     }
 
     @media screen and (min-width: 480px) {
         .hero-circles {
-            background-image: url(../images/hero/mobile480/circles/circles@3x.png);
-            background-size: contain;
             width: 330px;
             height: 52px;
         }
 
         .hero-ice-cream {
-            background-image: url(../images/hero/mobile480/ice-cream/ice-cream@3x.png);
-            background-size: contain;
             width: 218px;
             height: 267px;
         }
@@ -531,22 +482,16 @@ screen and (min-resolution: 3dppx) {
 
     @media screen and (min-width: 768px) {
         .hero-circles {
-            background-image: url(../images/hero/tablet/circles/circles@3x.png);
-            background-size: contain;
             width: 768px;
             height: 67.79px;
         }
 
         .hero-ice-cream {
-            background-image: url(../images/hero/tablet/ice-cream/ice-cream@3x.png);
-            background-size: contain;
             width: 268px;
             height: 329px;
         }
 
         .hero-lot-cream {
-            background-image: url(../images/hero/tablet/lot-of-ice-cream/lot-of-ice-cream@3x.png);
-            background-size: contain;
             width: 152px;
             height: 152px;
         }
@@ -554,22 +499,16 @@ screen and (min-resolution: 3dppx) {
 
     @media screen and (min-width:1200px) {
         .hero-circles {
-            background-image: url(../images/hero/desktop/circles/circles@3x.png);
-            background-size: contain;
             width: 1200px;
             height: 383.46px;
         }
 
         .hero-ice-cream {
-            background-image: url(../images/hero/desktop/ice-cream/ice-cream@3x.png);
-            background-size: contain;
             width: 456px;
             height: 560px;
         }
 
         .hero-lot-cream {
-            background-image: url(../images/hero/desktop/lot-of-ice-cream/lot-of-ice-cream@3x.png);
-            background-size: contain;
             width: 225px;
             height: 225px;
         }
