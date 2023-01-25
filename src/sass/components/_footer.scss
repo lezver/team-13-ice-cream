@@ -72,6 +72,11 @@
   line-height: 186%;
   text-align: right;
   color: #fcfcfc;
+  transition: color $time $time-distribution;
+  &:hover,
+  &:focus {
+    color: $almost-yellow;
+  }
 }
 
 .protection-of-rights {
