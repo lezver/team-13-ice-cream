@@ -35,14 +35,18 @@ svg {
   display: block;
 }
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  @include breakpoint(mob) {
+    width: 480px;
+  }
   @include breakpoint(tab) {
     padding: 0 32px;
+    width: 768px;
   }
   @include breakpoint(des) {
     padding: 0 16px;
+    width: 1200px;
   }
 }
 /* Стили для подложки */

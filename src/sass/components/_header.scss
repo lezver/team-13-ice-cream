@@ -1,5 +1,19 @@
 .header {
   background-color: $background-green;
+  padding-top: 12px;
+  padding-bottom: 25px;
+  @include breakpoint(mob) {
+    padding-top: 14px;
+    padding-bottom: 20px;
+  }
+  @include breakpoint(tab) {
+    padding-top: 20px;
+    padding-bottom: 7px;
+  }
+  @include breakpoint(des) {
+    padding-top: 8px;
+    padding-bottom: 22.5px;
+  }
 }
 .page-header .navbar {
   min-height: 37px;
@@ -8,17 +22,12 @@
   justify-content: space-between;
 }
 .navbar {
-  padding-top: 12px;
-  @include breakpoint(tab) {
-    padding-top: 20px;
-  }
   @include breakpoint(des) {
     position: relative;
     display: flex;
     flex-direction: row-reverse;
-    padding-top: 8px;
     padding-left: 308px;
-    height: 73px;
+    height: 65px;
   }
 }
 .logo-icon-mobile {
@@ -162,10 +171,8 @@
 }
 .tablet-absolute {
   @include breakpoint(tab) {
-    position: absolute;
-    top: 45px;
-    right: 216px;
-    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: 25px;
   }
 }
 .decoration-buy-now {
@@ -235,7 +242,7 @@
     height: 65px;
     position: absolute;
     left: 0;
-    top: 8px;
+    top: -5px;
   }
 }
 .decoration-buy-now-tablet {

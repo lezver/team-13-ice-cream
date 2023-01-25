@@ -1,21 +1,41 @@
 .hero {
-  // outline: 1px blue solid;
-
   background-color: $background-green;
   color: $almost-white;
   font-family: Montserrat, sans-serif;
+  padding-top: 25px;
+  @include breakpoint(mob) {
+    padding-top: 20px;
+  }
+  @include breakpoint(tab) {
+    padding-top: 8px;
+  }
+  @include breakpoint(tab) {
+    padding-top: 7px;
+  }
+  @include breakpoint(des) {
+    padding-top: 22.5px;
+  }
 }
 
 .hero .container {
   position: relative;
-
-  padding-top: 50px;
   padding-right: 20px;
   padding-bottom: 236px;
   padding-left: 20px;
-  margin: 0 auto;
-
-  width: 320px;
+  @include breakpoint(mob) {
+    padding-right: 213px;
+    padding-bottom: 150px;
+  }
+  @include breakpoint(tab) {
+    padding-right: 32px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+  }
+  @include breakpoint(des) {
+    padding-right: 16px;
+    padding-bottom: 103px;
+    padding-left: 16px;
+  }
 }
 
 .hero-header {
@@ -147,14 +167,6 @@
 /* Mobile 480px-width version */
 
 @media screen and (min-width: 480px) {
-  .hero .container {
-    padding-top: 40px;
-    padding-right: 213px;
-    padding-bottom: 150px;
-
-    width: 480px;
-  }
-
   .hero-circles {
     width: 320px;
     height: 49.11px;
@@ -173,15 +185,6 @@
 /* Tablet 768px-width version */
 
 @media screen and (min-width: 768px) {
-  .hero .container {
-    padding-top: 16px;
-    padding-right: 32px;
-    padding-bottom: 24px;
-    padding-left: 32px;
-
-    width: 768px;
-  }
-
   .hero-header {
     margin-bottom: 24px;
   }
@@ -291,15 +294,6 @@
 /* Desktop 1200px-width version */
 
 @media screen and (min-width: 1200px) {
-  .hero .container {
-    padding-top: 45px;
-    padding-right: 16px;
-    padding-bottom: 103px;
-    padding-left: 16px;
-
-    width: 1200px;
-  }
-
   .hero-header {
     font-size: 38px;
     line-height: 1.2568;
