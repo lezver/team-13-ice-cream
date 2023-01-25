@@ -1,6 +1,8 @@
 .header {
   background-color: $background-green;
   // padding-bottom: 25px;
+    padding-bottom: 10px;
+
           position: fixed;
 top: 0;
 left: 0;
@@ -8,7 +10,7 @@ width: 100%;
 z-index: 18;
   @include breakpoint(mob) {
     // padding-top: 14px;
-    // padding-bottom: 20px;
+    padding-bottom: 10px;
 
   }
   @include breakpoint(tab) {
