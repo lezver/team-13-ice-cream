@@ -2,17 +2,14 @@
   background-color: $background-green;
   color: $almost-white;
   font-family: Montserrat, sans-serif;
-  padding-top:65px;
+  padding-top: 65px;
   @include breakpoint(mob) {
     // padding-top: 20px;
-  padding-top:65px;
-
+    padding-top: 65px;
   }
- 
   @include breakpoint(tab) {
     // padding-top: 7px;
-  padding-top:64px;
-
+    padding-top: 64px;
   }
   @include breakpoint(des) {
     padding-top: 97px;
@@ -98,6 +95,7 @@
 .how-its-made {
   z-index: 2;
   color: $almost-yellow;
+  text-decoration: underline;
 
   font-size: 12px;
   line-height: 1.2192;
