@@ -2,18 +2,20 @@
   background-color: $background-green;
   color: $almost-white;
   font-family: Montserrat, sans-serif;
-  padding-top: 25px;
+  padding-top:65px;
   @include breakpoint(mob) {
-    padding-top: 20px;
+    // padding-top: 20px;
+  padding-top:65px;
+
   }
+ 
   @include breakpoint(tab) {
-    padding-top: 8px;
-  }
-  @include breakpoint(tab) {
-    padding-top: 7px;
+    // padding-top: 7px;
+  padding-top:64px;
+
   }
   @include breakpoint(des) {
-    padding-top: 22.5px;
+    padding-top: 97px;
   }
 }
 
