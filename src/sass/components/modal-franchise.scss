@@ -70,9 +70,10 @@
   margin-bottom: 24px;
   background: rgba(248, 210, 78, 0.1);
   outline: transparent;
-}
-.textarea-modal-franchise:focus {
-  border: 1px solid #f8d24e;
+  &:focus,
+  &:hover {
+    border: 1px solid #f8d24e;
+  }
 }
 .textarea-modal-franchise::placeholder {
   font-size: 12;
@@ -96,7 +97,8 @@
   line-height: 1.4;
   color: #131313;
 }
-.input-modal-franchise:focus {
+.input-modal-franchise:focus,
+.input-modal-franchise:hover {
   border: 1px solid #f8d24e;
 }
 
