@@ -2,9 +2,9 @@
   position: fixed;
   overflow: auto;
   max-height: 90vh;
-  top: 5%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,12 +22,7 @@
 }
 @media screen and (min-width: 768px) {
   .modal-product-card {
-    height: auto;
-    position: absolute;
-    top: 10%;
     width: 568px;
-    left: 50%;
-    transform: translate(-50%, 0);
   }
 }
 .product-card-text {
