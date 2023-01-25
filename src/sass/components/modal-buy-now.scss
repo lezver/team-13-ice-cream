@@ -1,4 +1,10 @@
 .modal-product-card {
+  position: fixed;
+  overflow: auto;
+  max-height: 90vh;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,23 +12,20 @@
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
-}
-@media screen and (max-width: 767px) {
-  .modal-product-card {
-    position: absolute;
-    top: 10%;
-    width: 280px;
-
-    left: 50%;
-    transform: translate(-50%, 0);
+  width: 280px;
+  transform: translate(-50%, 0);
+  & form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
   .modal-product-card {
+    height: auto;
     position: absolute;
     top: 10%;
-    max-width: 568px;
-    height: 664px;
+    width: 568px;
     left: 50%;
     transform: translate(-50%, 0);
   }
@@ -41,6 +44,7 @@
     line-height: 1.4;
   }
 }
+
 // costomers checkbox--------------
 .checkbox-list {
   display: flex;

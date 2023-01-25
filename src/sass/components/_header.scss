@@ -83,7 +83,8 @@
   border-radius: 10px;
   text-decoration: none;
   border: none;
-  transition: background-color $time $time-distribution, color $time $time-distribution;;
+  transition: background-color $time $time-distribution,
+    color $time $time-distribution;
 
   &:hover {
     background-color: #0a8817;
@@ -96,11 +97,14 @@
     background-color: #ababab;
   }
 }
-.buy-now-mobil{
+.buy-now-mobil {
   position: absolute;
-  top: 470px;
+  top: 390px;
   left: 50%;
   transform: translate(-50%, 0);
+  @include breakpoint(mob) {
+    top: 470px;
+  }
 }
 .buy-now {
   margin-left: 4px;
@@ -210,6 +214,9 @@
   }
   @media (max-width: 1199px) {
     margin-top: 140px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-top: 70px;
   }
 }
 .logo-icon-desctop {

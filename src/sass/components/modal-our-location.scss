@@ -10,6 +10,9 @@
     cursor: pointer;
   }
   .modal-our-location {
+    position: fixed;
+    max-height: 90%;
+    overflow: hidden;
     width: min-content;
     height: auto;
     background: #fcfcfc;
@@ -77,6 +80,9 @@
     cursor: pointer;
   }
   .modal-our-location {
+    position: fixed;
+    max-height: 90%;
+    overflow: hidden;
     width: min-content;
     height: auto;
     background: #fcfcfc;
@@ -85,7 +91,6 @@
     padding: 28px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   .map {

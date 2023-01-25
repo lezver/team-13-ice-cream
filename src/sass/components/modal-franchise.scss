@@ -1,11 +1,12 @@
 .modal-franchise {
-  top: 0;
-  bottom: 10%;
+  position: fixed;
+  max-height: 90vh;
+  overflow-x: hidden;
+  overflow-y: auto;
   padding: 28px;
   width: 280px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   background-color: #fff;
   border: 2px solid #f8d24e;
