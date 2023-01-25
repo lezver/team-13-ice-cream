@@ -201,17 +201,17 @@
           flex-direction: column;
           justify-content: space-between;
           align-items: center;
-          min-height: 301px;
+          min-height: 281px;
           margin-top: 20px;
           @include breakpoint(mob) {
-            min-height: 306px;
+            min-height: 286px;
           }
           @include breakpoint(tab) {
-            min-height: 324px;
+            min-height: 308px;
             margin-top: 16px;
           }
           @include breakpoint(des) {
-            min-height: 341px;
+            min-height: 311px;
             margin-top: 30px;
           }
           .products-subject {
@@ -251,7 +251,13 @@
               border: none;
               width: 40px;
               height: 16px;
+              &:hover{
+                svg {
+                  fill: white;
+                }
+              }
               .product-icon {
+                transition: fill $time $time-distribution;
                 width: 40px;
                 height: 16px;
               }
