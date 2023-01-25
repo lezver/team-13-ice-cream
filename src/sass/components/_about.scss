@@ -38,10 +38,10 @@
   height: 300px;
   img {
     @include breakpoint(tab) {
-      width: 330px;
+      min-width: 330px;
     }
     @include breakpoint(des) {
-      width: 490px;
+      min-width: 490px;
     }
   }
 }
