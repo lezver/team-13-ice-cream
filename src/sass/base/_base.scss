@@ -75,8 +75,7 @@ svg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30; /* Должен быть выше чем у подложки*/
-  /*  Побочные стили   */
+  z-index: 30;
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 30px;
@@ -85,10 +84,16 @@ svg {
   transition: 0.3s all;
 }
 /* Стили для активных классов подложки и окна */
-.modal.active,
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
 .overlay.active {
   opacity: 1;
   visibility: visible;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 /* Стили для кнопки закрытия */
 .modal__cross {
@@ -98,9 +103,16 @@ svg {
   top: 16.5px;
   right: 16.5px;
   fill: $almost-black;
+  transition: fill $time $time-distribution;
   cursor: pointer;
   &:hover,
   &:focus {
     fill: $almost-yellow;
+  }
+  @include breakpoint(tab) {
+    width: 13.33px;
+    height: 13.33px;
+    top: 17.33px;
+    right: 17.34px;
   }
 }

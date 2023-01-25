@@ -10,10 +10,11 @@
 
   width: 100%;
   z-index: 18;
-
-  border-bottom: 1px solid #787878;
-  box-shadow: 0px 1px 6px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
-    0px 2px 1px 0px #2e2f4214;
+  &.scroll-to-header {
+    border-bottom: 1px solid #787878;
+    box-shadow: 0px 1px 6px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
+      0px 2px 1px 0px #2e2f4214;
+  }
 
   @include breakpoint(mob) {
     // padding-top: 14px;
@@ -79,6 +80,7 @@
     justify-content: center;
     background-color: transparent;
     border: none;
+    margin-bottom: -10px;
   }
 }
 .icon-open-burger {
@@ -200,6 +202,7 @@
   @include breakpoint(tab) {
     margin-left: auto;
     margin-right: 25px;
+    margin-bottom: -5px;
   }
 }
 .decoration-buy-now {
@@ -292,25 +295,25 @@ body.noscroll {
     overflow: hidden;
   }
 }
-
 .header-scroll-btn {
   display: none;
 }
 .scroll-to-hero {
   display: block;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 25px;
+  right: 25px;
   z-index: 18;
-  @media (max-width: 479px) {
+  @include breakpoint(mob) {
     bottom: 50px;
+    right: 50px;
   }
 }
 .header-scroll-btn__link {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: $almost-yellow;
+  background-color: #f8d34e7a;
   border: none;
   justify-content: center;
   align-items: center;
@@ -327,7 +330,7 @@ body.noscroll {
   }
   &:hover {
     scale: 1.2;
-    background-color: #f8d34e7a;
+    background-color: $almost-yellow;
     > svg {
       fill: $almost-black;
       width: 50px;
