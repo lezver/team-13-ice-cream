@@ -251,7 +251,8 @@
               border: none;
               width: 40px;
               height: 16px;
-              &:hover{
+              &:hover,
+              &:focus {
                 svg {
                   fill: white;
                 }

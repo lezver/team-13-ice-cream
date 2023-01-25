@@ -91,6 +91,10 @@ svg {
   position: absolute;
   top: 16.5px;
   right: 16.5px;
-  fill: #444;
+  fill: $almost-black;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $almost-yellow;
+  }
 }
