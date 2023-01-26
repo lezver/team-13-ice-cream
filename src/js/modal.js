@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
       Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
   var modalButtons = document.querySelectorAll('.js-open-modal'),
     overlay = document.querySelector('.js-overlay-modal'),
-    closeButtons = document.querySelectorAll('.js-modal-close');
+    closeButtons = document.querySelectorAll('.js-modal-close'),
+    stopBackground = document.querySelector('.data-body-stop');
 
   /* Перебираем массив кнопок */
   modalButtons.forEach(function (item) {
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
             подложке и окну чтобы показать их. */
       modalElem.classList.add('active');
       overlay.classList.add('active');
+      stopBackground.classList.add('active');
     }); // end click
   }); // end foreach
 
@@ -61,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
+      stopBackground.classList.remove('active');
     });
   }); // end foreach
 
@@ -72,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (key == 27) {
         document.querySelector('.modal.active').classList.remove('active');
         document.querySelector('.overlay').classList.remove('active');
+        document.querySelector('.stopBackground').classList.remove('active');
       }
     },
     false
@@ -79,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   overlay.addEventListener('click', function () {
     document.querySelector('.modal.active').classList.remove('active');
+    document.querySelector('.data-body-stop.active').classList.remove('active');
     this.classList.remove('active');
   });
 }); // end ready
