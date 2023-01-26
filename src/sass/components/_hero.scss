@@ -212,13 +212,15 @@
     color: $almost-white;
 
     width: 150px;
-    margin-left: 184px;
     margin-bottom: 12px;
-
-    animation: appearance 1s $time-distribution;
+    opacity: 0;
+    transform: translateX(0px);
+    transition: transform $time $time-distribution,
+      opacity $time $time-distribution;
   }
 
   .hero-arrow {
+    cursor: url('../images/cursor-pointer.png'), pointer;
     display: inline-block;
 
     width: 40px;
@@ -228,7 +230,27 @@
 
     margin-left: 184px;
 
-    animation: appearance 1s $time-distribution;
+    order: 1;
+    z-index: 1;
+    &:hover {
+      animation-play-state: paused;
+    }
+    &:hover + .hero-lorem {
+      opacity: 1;
+      transform: translateX(184px);
+    }
+    animation: arrowHero 3000ms infinite $time-distribution;
+    @keyframes arrowHero {
+      0% {
+        transform: translateX(0px) scale(1);
+      }
+      50% {
+        transform: translateX(10px) scale(1.1);
+      }
+      100% {
+        transform: translateX(0px) scale(1);
+      }
+    }
   }
 
   .hero-network-statistics {
@@ -345,12 +367,14 @@
     line-height: 1.4;
 
     width: 220px;
-    margin-left: 241px;
     margin-bottom: 24px;
   }
 
   .hero-arrow {
     margin-left: 241px;
+    &:hover + .hero-lorem {
+      transform: translateX(241px);
+    }
   }
 
   .hero-network-statistics {

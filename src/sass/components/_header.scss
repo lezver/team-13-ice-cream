@@ -286,6 +286,13 @@
     width: 60px;
     height: 65px;
     fill: $almost-yellow;
+    transform: scale(1);
+    transition: fill $time $time-distribution,
+      transform $time $time-distribution;
+    &:hover {
+      fill: $almost-white;
+      transform: scale(1.02);
+    }
   }
   @media (max-width: 1199px) {
     display: none;

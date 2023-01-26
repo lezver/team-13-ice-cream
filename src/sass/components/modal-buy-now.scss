@@ -42,13 +42,15 @@
 
 // costomers checkbox--------------
 .checkbox-list {
+  @extend %list-style;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 84px;
-  list-style: none;
-  padding-inline-start: 0;
-  margin: 0;
+  margin-bottom: 32px;
+  @include breakpoint(tab) {
+    margin-bottom: 40px;
+  }
 }
 // green------
 .costomers-checkbox-ice-cream {
