@@ -102,22 +102,34 @@ svg {
 }
 /* Стили для кнопки закрытия */
 .modal__cross {
-  width: 11px;
-  height: 11px;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: 16.5px;
-  right: 16.5px;
-  fill: $almost-black;
-  transition: fill $time $time-distribution;
-  cursor: pointer;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  @include breakpoint(tab) {
+    width: 24px;
+    height: 24px;
+  }
+  > svg {
+    width: 11px;
+    height: 11px;
+    fill: $almost-black;
+    transition: fill $time $time-distribution;
+    @include breakpoint(tab) {
+      width: 14px;
+      height: 14px;
+    }
+  }
   &:hover,
   &:focus {
-    fill: $almost-yellow;
-  }
-  @include breakpoint(tab) {
-    width: 13.33px;
-    height: 13.33px;
-    top: 17.33px;
-    right: 17.34px;
+    > svg {
+      fill: $almost-yellow;
+    }
   }
 }
