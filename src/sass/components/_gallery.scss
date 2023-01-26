@@ -4,7 +4,7 @@
 }
 
 .gallery-wrapper {
-  &-title {
+  > h2 {
     @extend %visually-hidden;
   }
   position: absolute;

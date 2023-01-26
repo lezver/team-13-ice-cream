@@ -34,7 +34,7 @@
 }
 .reviews-wrapper {
   background-color: transparent;
-  &-title {
+  > h2 {
     @extend %visually-hidden;
   }
 }
