@@ -196,6 +196,12 @@
     outline: none;
     border-color: #f8d24e;
   }
+  &:not(:placeholder-shown):required:valid {
+    border: 2px solid #72fc5785;
+  }
+  &:not(:placeholder-shown):required:invalid {
+    border: 2px solid #fc575785;
+  }
 }
 
 .modal-input-comment {

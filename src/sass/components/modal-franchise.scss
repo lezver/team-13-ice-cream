@@ -94,6 +94,12 @@
   margin-bottom: 12px;
   background: rgba(248, 210, 78, 0.1);
   outline: transparent;
+  &:not(:placeholder-shown):required:valid {
+    border: 2px solid #72fc5785;
+  }
+  &:not(:placeholder-shown):required:invalid {
+    border: 2px solid #fc575785;
+  }
 }
 
 .input-modal-franchise::placeholder {
