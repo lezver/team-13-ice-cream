@@ -274,7 +274,7 @@
 @media screen and (min-width: 768px) {
   .modal-ingredients {
     width: 568px;
-    height: 996px;
+    max-height: 90vh;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 40px;
