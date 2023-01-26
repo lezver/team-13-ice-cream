@@ -1,397 +1,395 @@
 .contacts-h {
-    @extend %visually-hidden;
+  @extend %visually-hidden;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 .contacts {
-    margin-top: -349px;
-    background-image: linear-gradient(to bottom,
-            transparent 349px,
-            #84a178 349px);
+  margin-top: -349px;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 349px,
+    #84a178 349px
+  );
 
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
-
 .contacts-container {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 .contacts-list {
-    @extend %list-style;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  @extend %list-style;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-information {
-    width: 280px;
+  width: 280px;
 
-    padding: 40px 32px 24px;
+  padding: 40px 32px 24px;
 
-    background: $almost-white;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
+  background: $almost-white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
 }
 
 .contact-name {
-    display: inline-block;
+  display: inline-block;
 
-    padding: 4px 22px;
+  padding: 4px 22px;
 
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.2;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
 
-    letter-spacing: 0.04em;
+  letter-spacing: 0.04em;
 
-    color: $almost-black;
+  color: $almost-black;
 
-    background: $almost-yellow;
-    border-radius: 4px;
+  background: $almost-yellow;
+  border-radius: 4px;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-city {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
 
-    letter-spacing: 0.04em;
+  letter-spacing: 0.04em;
 
-    color: $almost-black;
+  color: $almost-black;
 
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .contact-location {
-    display: inline-block;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
 
-    letter-spacing: 0.04em;
+  letter-spacing: 0.04em;
 
-    color: #D6936D;
+  color: #d6936d;
 
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 
-    transition: text-decoration $time $time-distribution;
+  transition: text-decoration $time $time-distribution;
 }
 
-
 .contact-open-hours {
-    @extend %list-style;
+  @extend %list-style;
 
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .contact-days {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
 
-    color: $almost-black;
-
-
+  color: $almost-black;
 }
 
 .contact-hours {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
 
-    color: #ABABAB;
+  color: #ababab;
 }
 
 .contacts-adresses {
-    display: block;
+  display: block;
 
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.6;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
 
-    color: $almost-black;
-    transition: color $time $time-distribution;
+  color: $almost-black;
+  transition: color $time $time-distribution;
 }
 
 .contacts-line {
-    border: 1px solid #E1E1E1;
-    margin-bottom: 24px;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 24px;
 }
 
 .linia {
-    fill: currentColor;
+  fill: currentColor;
 }
 
 .contacts-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
 }
 
 .contact-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
 
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
 
-    width: 196px;
-    height: 42px;
+  width: 196px;
+  height: 42px;
 
-    text-align: center;
+  text-align: center;
 
-    color: $almost-black;
+  color: $almost-black;
 
-    background: #F8D24E;
-    border-radius: 10px;
-    border: transparent;
-    cursor: pointer;
+  background: #f8d24e;
+  border-radius: 10px;
+  border: transparent;
 
-    transition: background-color $time $time-distribution, color $time $time-distribution;
+  transition: background-color $time $time-distribution,
+    color $time $time-distribution;
 }
 
 .contact-button-svg {
-    fill: currentColor;
+  fill: currentColor;
 }
 
 .transparent {
-    background-color: transparent;
-    border: 2px solid #F8D24E;
+  background-color: transparent;
+  border: 2px solid #f8d24e;
 
-    transition: background-color $time $time-distribution, border $time $time-distribution, color $time $time-distribution;
+  transition: background-color $time $time-distribution,
+    border $time $time-distribution, color $time $time-distribution;
 }
 
 .contact-hours-pad {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 /* hovers and focuses */
 
 .contact-button:hover {
-    background-color: #0A8817;
+  background-color: #0a8817;
 }
 
 .contact-button:focus {
-    background-color: #0A8817;
-    color: #FFFFFF;
+  background-color: #0a8817;
+  color: #ffffff;
 }
 
 .contact-button:disabled {
-    background: #ABABAB;
+  background: #ababab;
 }
 
 .transparent:hover {
-    background-color: transparent;
-    border: 2px solid #0A8817;
+  background-color: transparent;
+  border: 2px solid #0a8817;
 }
 
 .transparent:focus {
-    background-color: transparent;
-    border: 2px solid #0A8817;
-    color: #FFFFFF;
+  background-color: transparent;
+  border: 2px solid #0a8817;
+  color: #ffffff;
 }
 
 .transparent:disabled {
-    border: 2px solid #ABABAB;
+  border: 2px solid #ababab;
 }
 
 .contact-location:hover,
 .contact-location:focus {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .contact-location:disabled {
-    color: #ABABAB;
-    text-decoration: underline;
+  color: #ababab;
+  text-decoration: underline;
 }
 
 .contacts-adresses:hover,
 .contacts-adresses:focus {
-    color: #0A8817;
+  color: #0a8817;
 }
 
 .contacts-adresses:disabled {
-    color: #ABABAB;
+  color: #ababab;
 }
 
 .contact-information {
-    width: 280px;
+  width: 280px;
 
-    padding: 40px 32px 24px;
+  padding: 40px 32px 24px;
 
-    background: #FCFCFC;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
+  background: #fcfcfc;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
 }
 
-@media screen and (min-width: 320px) {}
+@media screen and (min-width: 320px) {
+}
 
 @media screen and (min-width: 768px) {
-    .contacts {
-        margin-top: -299px;
-        background-image: linear-gradient(to bottom,
-                transparent 299px,
-                #84a178 299px);
+  .contacts {
+    margin-top: -299px;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 299px,
+      #84a178 299px
+    );
 
-        padding-bottom: 20px;
-    }
+    padding-bottom: 20px;
+  }
 
-    .container {
-        padding: 0 16px;
-    }
+  .container {
+    padding: 0 16px;
+  }
 
+  .contacts-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-    .contacts-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    gap: 16px;
 
-        gap: 16px;
+    margin-bottom: 40px;
+  }
 
-        margin-bottom: 40px;
-    }
+  .contact-information {
+    width: 224px;
 
-    .contact-information {
-        width: 224px;
+    padding: 40px 24px;
+  }
 
-        padding: 40px 24px;
-    }
+  .contact-name {
+    padding: 4px 10px;
 
-    .contact-name {
-        padding: 4px 10px;
+    font-size: 14px;
+    line-height: 1.4;
 
-        font-size: 14px;
-        line-height: 1.4;
+    border-radius: 6px;
 
-        border-radius: 6px;
+    margin-bottom: 32px;
+  }
 
-        margin-bottom: 32px;
-    }
+  .contact-city {
+    font-size: 14px;
 
-    .contact-city {
-        font-size: 14px;
+    margin-bottom: 12px;
+  }
 
-        margin-bottom: 12px;
-    }
+  .contact-location {
+    font-size: 14px;
 
+    margin-bottom: 32px;
+  }
 
-    .contact-location {
-        font-size: 14px;
+  .contacts-line {
+    margin-bottom: 32px;
+  }
 
-        margin-bottom: 32px;
-    }
+  .contact-open-hours {
+    margin-bottom: 32px;
+  }
 
-    .contacts-line {
-        margin-bottom: 32px;
-    }
+  .contact-days {
+    font-size: 14px;
+  }
 
-    .contact-open-hours {
-        margin-bottom: 32px;
-    }
+  .contact-hours {
+    font-size: 14px;
+  }
 
-    .contact-days {
-        font-size: 14px;
-    }
+  .contacts-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    .contact-hours {
-        font-size: 14px;
-    }
-
-    .contacts-buttons {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .contacts-adresses {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
+  .contacts-adresses {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .contacts {
-        margin-top: -128px;
-        background-image: linear-gradient(to bottom,
-                transparent 128px,
-                #84a178 128px);
+  .contacts {
+    margin-top: -128px;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 128px,
+      #84a178 128px
+    );
 
-        padding-bottom: 60px;
-    }
+    padding-bottom: 60px;
+  }
 
-    .container {
-        padding: 0 16px;
-    }
+  .container {
+    padding: 0 16px;
+  }
 
+  .contacts-list {
+    gap: 32px;
 
-    .contacts-list {
-        gap: 32px;
+    margin-bottom: 60px;
+  }
 
-        margin-bottom: 60px;
-    }
+  .contact-information {
+    width: 368px;
 
-    .contact-information {
-        width: 368px;
+    padding: 40px;
+  }
 
-        padding: 40px;
-    }
+  .contact-name {
+    padding: 4px 14px;
 
-    .contact-name {
-        padding: 4px 14px;
+    font-size: 16px;
 
-        font-size: 16px;
+    margin-bottom: 36px;
+  }
 
-        margin-bottom: 36px;
-    }
+  .contact-city {
+    font-size: 16px;
 
-    .contact-city {
-        font-size: 16px;
+    margin-bottom: 8px;
+  }
 
-        margin-bottom: 8px;
-    }
+  .contact-location {
+    font-size: 16px;
+  }
 
+  .contacts-line {
+    margin-bottom: 32px;
+  }
 
-    .contact-location {
-        font-size: 16px;
-    }
+  .contact-days {
+    font-size: 16px;
+  }
 
-    .contacts-line {
-        margin-bottom: 32px;
-    }
+  .contact-hours {
+    font-size: 16px;
+  }
 
-    .contact-days {
-        font-size: 16px;
-    }
+  .contacts-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    .contact-hours {
-        font-size: 16px;
-    }
+  .contacts-adresses {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 
-    .contacts-buttons {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .contacts-adresses {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-
-    .contact-hours-pad {
-        margin-bottom: 12px;
-    }
+  .contact-hours-pad {
+    margin-bottom: 12px;
+  }
 }

@@ -265,22 +265,21 @@
   font-size: 12px;
   line-height: 1.25;
   border: none;
-
+  transition: background $time $time-distribution,
+    color $time $time-distribution;
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    color: #ffff;
+  }
+  &:disabled {
+    background-color: #ababab;
+  }
   @include breakpoint(tab) {
     font-size: 14px;
     line-height: 1.21;
   }
-}
-
-.buy-now-button:hover {
-  background-color: #0a8817;
-}
-
-.buy-now-button:focus {
-  color: #ffff;
-}
-.buy-now-button:disabled {
-  background-color: #ababab;
 }
 .checkbox {
   position: absolute;
