@@ -42,24 +42,28 @@
   height: 42px;
   border-radius: 10px;
   background-color: #f8d24e;
-  cursor: pointer;
   border: transparent;
-  transition: background-color 250ms linear, color 250ms linear;
   outline: none;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.21;
+  transition: background $time $time-distribution,
+    color $time $time-distribution, box-shadow $time $time-distribution;
+  &:hover,
+  &:focus {
+    box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+    background-color: #0a8817;
+  }
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    color: #ffff;
+  }
+  &:disabled {
+    background-color: #ababab;
+  }
 }
-
-.submit-button-modal-franchise:hover {
-  background-color: #0a8817;
-}
-
-.submit-button-modal-franchise:focus {
-  background-color: #0a8817;
-  color: #fff;
-}
-
 .textarea-modal-franchise {
   resize: none;
   border: 1px solid #84a178;

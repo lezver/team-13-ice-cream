@@ -125,15 +125,24 @@
   border-radius: 10px;
   text-decoration: none;
   border: none;
+  box-shadow: 3px -3px 6px #00000030, 3px 3px 6px #00000030,
+    -3px 3px 6px #00000030, -3px -3px 6px #00000030;
   transition: background-color $time $time-distribution,
-    color $time $time-distribution;
+    color $time $time-distribution, transform $time $time-distribution,
+    box-shadow $time $time-distribution;
 
   &:hover {
     background-color: #0a8817;
+    box-shadow: 0 3px 10px -0.5px #00000075;
   }
   &:focus {
     background-color: #0a8817;
+    box-shadow: 0 3px 10px -0.5px #00000075;
     color: $almost-white;
+  }
+  &:active {
+    transform: translate(0, 3px);
+    box-shadow: 0px -4px 6px 0px #0000003d, 0px 2px 1px #0000003d;
   }
   &:disabled {
     background-color: #ababab;
@@ -141,11 +150,23 @@
 }
 .buy-now-mobil {
   position: absolute;
-  top: 390px;
+  top: 400px;
   left: 50%;
+  box-shadow: 3px -3px 6px #00000030, 3px 3px 6px #00000030,
+    -3px 3px 6px #00000030, -3px -3px 6px #00000030;
   transform: translate(-50%, 0);
+  transition: transform $time $time-distribution,
+    box-shadow $time $time-distribution;
+  &:hover,
+  &:focus {
+    box-shadow: 0 3px 10px -0.5px #00000075;
+  }
+  &:active {
+    transform: translate(-50%, 3px);
+    box-shadow: 0px -4px 6px 0px #0000003d, 0px 2px 1px #0000003d;
+  }
   @include breakpoint(mob) {
-    top: 470px;
+    top: 500px;
   }
 }
 .buy-now {
@@ -257,7 +278,7 @@
     margin-top: 140px;
   }
   @media screen and (max-width: 480px) {
-    margin-top: 70px;
+    margin-top: 40px;
   }
 }
 .logo-icon-desctop {

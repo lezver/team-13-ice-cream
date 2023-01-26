@@ -64,7 +64,6 @@
   top: 22px;
   border-radius: 50%;
   width: 100%;
-  
 }
 
 .about-dscript_btn {
@@ -115,16 +114,25 @@
   color: #000000;
 
   transition: color $time $time-distribution,
-    background-color $time $time-distribution;
+    background-color $time $time-distribution,
+    transform $time $time-distribution, box-shadow $time $time-distribution;
+  box-shadow: 1px -1px 6px #00000030, 1px 1px 6px #00000030,
+    -1px 1px 6px #00000030, -1px -1px 6px #00000030;
+  &:active {
+    transform: translate(0, 3px);
+    box-shadow: 0px -4px 6px 0px #0000003d, 0px 2px 1px #0000003d;
+  }
 }
 
 .about-btn_more:hover {
   background: #0a8817;
+  box-shadow: 0 3px 10px -0.5px #00000075;
 }
 
 .about-btn_more:focus {
   color: $almost-white;
   background: #0a8817;
+  box-shadow: 0 3px 10px -0.5px #00000075;
 }
 
 .about-svg_arrow {

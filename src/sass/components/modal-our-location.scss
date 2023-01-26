@@ -33,20 +33,22 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-    transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    outline: 0;
-  }
-  .open-map:hover {
-    background-color: #0a8817;
-    color: #000;
-  }
-  .open-map:focus {
-    background-color: #0a8817;
-    color: #fff;
-  }
-  .open-map:disabled {
-    background-color: #ababab;
-    color: #000;
+    transition: background $time $time-distribution,
+      color $time $time-distribution, box-shadow $time $time-distribution;
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+      background-color: #0a8817;
+    }
+    &:hover {
+      background-color: #0a8817;
+    }
+    &:focus {
+      color: #ffff;
+    }
+    &:disabled {
+      background-color: #ababab;
+    }
   }
   .title-modal-location {
     font-family: 'Seymour One';

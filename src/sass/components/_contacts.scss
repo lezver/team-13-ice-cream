@@ -158,7 +158,14 @@ a {
   border: transparent;
 
   transition: background-color $time $time-distribution,
-    color $time $time-distribution;
+    color $time $time-distribution, transform $time $time-distribution,
+    box-shadow $time $time-distribution;
+  box-shadow: 1px -1px 6px #00000030, 1px 1px 6px #00000030,
+    -1px 1px 6px #00000030, -1px -1px 6px #00000030;
+  &:active {
+    transform: translate(0, 3px);
+    box-shadow: 0px -4px 6px 0px #0000003d, 0px 2px 1px #0000003d;
+  }
 }
 
 .contact-button-svg {
