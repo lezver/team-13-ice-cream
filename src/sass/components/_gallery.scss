@@ -4,6 +4,9 @@
 }
 
 .gallery-wrapper {
+  &-title {
+    @extend %visually-hidden;
+  }
   position: absolute;
   width: 100%;
   transform: translateY(-36px);

@@ -34,6 +34,9 @@
 }
 .reviews-wrapper {
   background-color: transparent;
+  &-title {
+    @extend %visually-hidden;
+  }
 }
 .review {
   display: flex;
