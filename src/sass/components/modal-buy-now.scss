@@ -239,10 +239,10 @@
     border-color: #f8d24e;
     outline: none;
   }
-  &:not([type='checkbox']):required:valid {
+  &:not(:placeholder-shown):required:valid {
     border: 2px solid #72fc5785;
   }
-  &:not([type='checkbox']):required:invalid {
+  &:not(:placeholder-shown):required:invalid {
     border: 2px solid #fc575785;
   }
 }
