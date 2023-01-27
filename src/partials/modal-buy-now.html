@@ -5,7 +5,7 @@
     </svg>
   </button>
   <p class="product-card-text">Buy now</p>
-  <form>
+  <form name="form1">
     <ul class="checkbox-list">
       <li>
         <input
@@ -13,6 +13,7 @@
           type="checkbox"
           name="ice-cream"
           id="ice-cream"
+          checked
         />
         <label class="costomers-checkbox-ice-cream" for="ice-cream">
           <span class="checkbox-text">ice cream</span>
@@ -74,7 +75,9 @@
       placeholder="Comment"
     ></textarea>
     <label for="comment-buy-now"></label>
-    <button class="buy-now-button" type="submit">Submit</button>
+    <button class="buy-now-button" type="submit" name="btnSubmit" disabled>
+      Submit
+    </button>
   </form>
 </div>
 <div class="overlay js-overlay-modal"></div>
