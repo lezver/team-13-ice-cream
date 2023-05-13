@@ -67,23 +67,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }); // end foreach
 
-  document.body.addEventListener(
-    'keyup',
-    function (e) {
-      var key = e.keyCode;
-
-      if (key == 27) {
-        document.querySelector('.modal.active').classList.remove('active');
-        document.querySelector('.overlay').classList.remove('active');
-        document.querySelector('.stopBackground').classList.remove('active');
-      }
-    },
-    false
-  );
-
   overlay.addEventListener('click', function () {
     document.querySelector('.modal.active').classList.remove('active');
     document.querySelector('.data-body-stop.active').classList.remove('active');
     this.classList.remove('active');
   });
 }); // end ready
+
+const overlay = document.querySelector('.overlay');
+const cross = document.querySelector('.read-more-cross');
+const iframe = document.querySelector('.read-more-iframe');
+
+cross.addEventListener('click', () => {
+  const iframeSrc = iframe.src;
+  iframe.src = iframeSrc;
+});
+
+overlay.addEventListener('click', () => {
+  const iframeSrc = iframe.src;
+  iframe.src = iframeSrc;
+});

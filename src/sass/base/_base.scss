@@ -5,6 +5,19 @@ body {
   color: $almost-black;
   scroll-behavior: smooth;
   cursor: url('../images/cursor-default.png'), default;
+  background-color: $background-green;
+  &::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background-color: #f8d34ea9;
+    &:hover {
+      background-color: $almost-yellow;
+    }
+  }
 }
 // Номер телефона у футері
 // font-family: 'DM Sans', sans-serif;
@@ -71,6 +84,18 @@ svg {
 }
 /* Стили для модальных окон */
 .modal {
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background-color: #f8d34ea9;
+    &:hover {
+      background-color: $almost-yellow;
+    }
+  }
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;

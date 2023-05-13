@@ -36,6 +36,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    > iframe {
+      width: 568px;
+    }
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -61,6 +64,9 @@
     padding: 28px;
     flex-direction: column;
     align-items: center;
+    > iframe {
+      width: 224px;
+    }
   }
   .yt-video {
     width: 224px;
