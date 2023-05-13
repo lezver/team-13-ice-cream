@@ -1,18 +1,18 @@
 @mixin breakpoint($point) {
   @if $point ==mob {
-    @media screen and(min-width: 480px) {
+    @media screen and (min-width: 480px) {
       @content;
     }
   }
 
   @if $point ==tab {
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
       @content;
     }
   }
 
   @if $point ==des {
-    @media screen and(min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       @content;
     }
   }
